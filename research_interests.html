@@ -1,198 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
+	<script>(function(){try{var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width = device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Research Interests — Arturo de Giorgi</title>
 
-	<title>Research Interests </title>
-
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link href="./style.css" type="text/css" rel="stylesheet">
-    <!-- Add fontawesome -->
-    <script src="https://kit.fontawesome.com/568a2adcad.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="./main.css" type="text/css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/568a2adcad.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-	<header>
-	<nav class="navbar navbar-expand-md">
-	  <a class="navbar-brand" href="./index.html">Arturo de Giorgi</a>
-	  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-	  <span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse" id="main-navigation">
-	    <ul class="navbar-nav">
-	    	<li class="nav-item">
-	     		<a class="nav-link" href="./index.html">Home</a>
-	    	</li>
-	    	<li class="nav-item">
-	    		<a class="nav-link" href="./cv.html">CV</a>
-	    	</li>
-            <li class="nav-item">
-                <a class="nav-link" href="./research_interests.html">Research Interests</a>
-            </li>
-	    	<li class="nav-item">
-	    		<a class="nav-link" href="./publications.html">Publications</a>
-	    	</li>
-            <li class="nav-item">
-                <a class="nav-link" href="./talks.html">Talks and Conferences</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./posters.html">Posters</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./hobbies.html">Non-Scientific Activities</a>
-            </li>
-	    	<!--<li class="nav-item">
-	    		<a class="nav-link" href="./didactics.html">Didactics</a>
-	    	</li>-->
-            <!--<li class="nav-item">
-                <a class="nav-link" href="./contact.php">Contact</a>
-            </li>-->
-	    </ul>
-	  </div>
-	</nav>
+	<header class="site-header">
+		<nav class="nav">
+			<a class="nav-brand" href="./index.html">Arturo de Giorgi</a>
+			<div class="nav-right">
+				<ul class="nav-links">
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="./cv.html">CV</a></li>
+					<li><a class="active" href="./research_interests.html">Research Interests</a></li>
+					<li><a href="./publications.html">Publications</a></li>
+					<li><a href="./talks.html">Talks and Conferences</a></li>
+					<li><a href="./posters.html">Posters</a></li>
+					<li><a href="./hobbies.html">Non-Scientific Activities</a></li>
+				</ul>
+				<button class="theme-toggle" type="button" aria-label="Toggle dark mode">🌙</button>
+				<button class="nav-toggle" type="button" aria-label="Toggle navigation">
+					<span></span><span></span><span></span>
+				</button>
+			</div>
+		</nav>
 	</header>
 
-	<main class="page-header header container-fluid" >
-		<div class="description">
-            <br>
-	  		<h1>Research Interests</h1>
-            <p>Some of my actual and past Research Interests.
-                <br>
-                <b>-- UNDER MAINTENANCE: see CV --</b>
-            </p>
-		</div>
-		<div class="container-fluid" style="margin-top: -20px;">
-			<div class="row">
-				<div class="col-lg-3 col-md-3 col-sm-12" id="about-info-white">
-					<figure id="profile-image">
-                        <img  src="./Images/deGiorgi_web.jpeg" style="height: 70%; width:70%;   border-radius: 50%;" alt="Arturo de Giorgi">
-                    </figure>
-                    <br>
-                    <hr class="hr_style">
-                        <h5>Ph.D.</h5>
-                        <img  src="./Images/ift_logo.png"  alt="IFT Logo" style="margin-left:3%; height: 8em; width:16em;">
-                    <hr class="hr_style">
-                    <ul id="about-external">
-                        <li><i class="fas fa-envelope" aria-hidden="true" style=";margin-right:.2em;"></i> <a class="info-link" href="mailto:arturo.degiorgi@uam.es">Email</a></li>
-                        <li><i class="fab fa-linkedin-in" aria-hidden="true" style="margin-right:.32em;"></i> <a class="info-link" href="https://www.linkedin.com/in/arturo-de-giorgi-8a6711121/">Linkedin</a></li>
-                        <li><i class="fas fa-seedling" aria-hidden="true" style=";margin-right:.2em;"></i> <a class="info-link" href="https://inspirehep.net/authors/1838021">INSPIRE</a></li>
-                        <li><!--<div itemscope itemtype="https://schema.org/Person">--><a itemprop="sameAs"class="info-link" content="https://orcid.org/0000-0002-9260-5466" href="https://orcid.org/0000-0002-9260-5466" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.4em;" alt="ORCID iD icon">ORCID</a><!--</div>--></li>
-                        <li><img  src="./Images/Artupia_logo.png" style="height: 1em; width:1em; margin-right: .2em;" alt="Artupia Logo" > <a href="https://artupia.com" class="info-link" target="_blank">Artupia</a></li>
-                        <li><i class="fab fa fa-github" aria-hidden="true" style=";margin-right:.2em;"></i> <a href="https://github.com/DegCo" class="info-link" target="_blank">Github</a></li>
-                    </ul>
-                    <hr class="hr_style">
-	    		</div>
-	    		<div class="col-lg-9 col-md-9 col-sm-12">
-                    <div class="square-section">
-                        <img src="./Images/AxionElectron.jpg" align="right" style="margin-left: 20px; " class="research-image">
-                        <h4>Axion-Like Particles (ALPs)</h4>
-                        <p style="text-align: justify; margin-bottom: -5px;">   
-                            Particles with properties analogous to the QCD-axion, i.e. only anomalous or derivative couplings, arise in many different models as the result of the breaking of some axial symmetries. The phenomenological consequences of such particles are therefore of the innermost interest.
-                            <span id='dots1'></span>
-                            <span id='more1' style="text-align: right; display: none;">
-                            <br>
-                            <br>
-                            Work in progress.
-                            <br>
-                            <br>
-                            <b>References:</b>
-                            </span></span>
-                        </p>
-                        <button onclick="ReadDiff('dots1','more1','myBtn1')" class="btn" id='myBtn1'>Read more</button>
-                    </div>
-                    <br>
-                    <div class="square-section">
-                        <img src="./Images/GnGmGk.png" align="left" style="margin-right: 20px; " class="research-image">
-                        <h4>Extra-Dimensional Gravity</h4>
-                        <p style="text-align: justify; margin-bottom: -5px;">   
-                            A fascinating possibility is the existence of extra dimensions invisible to us. If this was the case, Einstein's General Relativity (GR) would have to be recovered in the 4D-Effective Field Theory. The reduction from the 5D to 4D theory usually generates a huge spectrum of particles, which existence's consequences may be detected at colliders.
-                            <br>
-                            <br>
-                            I have focused on the Randall-Sundrum (RS) model, which through a compact warped 5th-dimension solves elegantly the hierarchy problem between the Planck and the Higgs scales and naturally includes gravitational interactions much stronger compared to GR. 
-                            <span id='dots2'></span>
-                            <span id='more2' style="text-align: right; display: none;">
-                            <br>
-                            <br>
-                            Such a stronger coupling makes the theory, from a phenomenological point of view, more appealing than GR, since it leads to predictions that could be tested in the near future at colliders.
-                            <br>
-                            <br>
-                            <b>References:</b>
-                        </span></span>
-                        </p>
-                        <button onclick="ReadDiff('dots2','more2','myBtn2')" class="btn" id='myBtn2' style="float: right;">Read more</button>
-                    </div>
-                    <br>
-                    <div class="square-section">
-                        <img src="./Images/Dark_Matter.jpg" align="right" style="margin-left: 20px;" class="research-image">
-                        <h4>Dark Matter</h4>
-                        <p style="text-align: justify; margin-bottom: -5px;">   
-                            The nature of Dark Matter (DM) remains one of the biggest open questions in physics. Since hydrodynamically it seems to behave as dust, the simplest assumption is to consider DM as made of some type of unknown particle. Its reluctance to interact with the Standard Model particles becomes the key element to a world of models: sterile neutrinos, WIMPs and Axions are some of the most studied options.
-                            Since we know of its existence only through its gravitational force, an interesting possibility is that this particle only interacts gravitationally; this is the path I am exploring.
-                            <span id='dots3'></span>
-                            <span id='more3' style="text-align: right; display: none;">
-                            <br>
-                            <br>
-                            I have studied scalar massive DM in combination with the Randall-Sundrum model, that is a warped extra-dimensional model of gravity which includes gravitational interactions much stronger compared to GR. 
-                            <br><br>Image Credit: <i>"Halo and Galaxy Formation Histories from the Millennium Simulation"</i>, G. Lemson et al. (2006)
-                            <br>
-                            <br>
-                            <b>References:</b></span>
-                        </p>
-                        <button onclick="ReadDiff('dots3','more3','myBtn3')" class="btn" id='myBtn3'>Read more</button>
-                    </div>
-    				</div>
-	    		</div>
+	<main class="container">
+		<h1 class="page-title">Research Interests</h1>
+		<p class="page-subtitle">Theoretical particle physics beyond the Standard Model — extra dimensions, axions, dark matter, neutrinos, and the transient signals that connect them.</p>
+
+		<div class="cv-layout">
+			<aside class="cv-sidebar">
+				<div class="card">
+					<img class="cv-sidebar-photo" src="./Images/deGiorgi_web.jpg" alt="Arturo de Giorgi">
+					<h3>Arturo de Giorgi</h3>
+					<p class="role">Postdoctoral Research Associate<br>IPPP, Durham University</p>
+					<ul class="cv-links">
+						<li><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:arturo.de-giorgi@durham.ac.uk">Email</a></li>
+						<li><i class="fab fa-linkedin-in" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/arturo-de-giorgi-8a6711121/" target="_blank" rel="noopener">LinkedIn</a></li>
+						<li><i class="fas fa-seedling" aria-hidden="true"></i> <a href="https://inspirehep.net/authors/1838021" target="_blank" rel="noopener">INSPIRE</a></li>
+						<li><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="" style="width:1em;vertical-align:-1px;"> <a href="https://orcid.org/0000-0002-9260-5466" target="_blank" rel="noopener me">ORCID</a></li>
+						<li><i class="fas fa-graduation-cap" aria-hidden="true"></i> <a href="https://scholar.google.com/citations?user=iUJl0fgAAAAJ&hl=it&oi=ao" target="_blank" rel="noopener">Google Scholar</a></li>
+					</ul>
+					<a class="btn" href="./cv.html" style="width:100%;">View full CV</a>
+				</div>
+			</aside>
+
+			<div>
+				<section class="section">
+					<div class="card topic-card">
+						<img src="./Images/GnGmGk.png" alt="Kaluza-Klein graviton diagram">
+						<div>
+							<h2 class="section-title" style="border:none;padding:0;margin-bottom:8px;">Extra Dimensions &amp; the Kaluza-Klein Gravitational Sector</h2>
+							<p>A recurring theme in my work: if extra spatial dimensions exist, 4D General Relativity emerges from a higher-dimensional theory whose compactification produces a tower of massive Kaluza-Klein gravitons — spin-2, vector, and scalar. I study the sum rules and symmetry structures that govern how these towers interact, and how truncating them can produce unphysical results unless the full tower is kept.</p>
+							<details class="more">
+								<summary>Read more</summary>
+								<p>Selected work: <a href="https://arxiv.org/abs/2311.01507" target="_blank" rel="noopener">Gravity-matter sum rules in models with a single extra-dimension</a> (JHEP 05 (2024) 315) and <a href="https://arxiv.org/abs/2012.09672" target="_blank" rel="noopener">Unitarity in KK-graviton production</a> (JHEP 04 (2021) 143).</p>
+							</details>
+						</div>
+					</div>
+				</section>
+
+				<section class="section">
+					<div class="card topic-card">
+						<img src="./Images/AxionElectron.jpg" alt="Axion coupling illustration">
+						<div>
+							<h2 class="section-title" style="border:none;padding:0;margin-bottom:8px;">Axions and Axion-Like Particles (ALPs)</h2>
+							<p>ALPs — particles with only anomalous or derivative couplings — arise in many models as pseudo-Goldstone bosons of broken axial symmetries. I work on their phenomenology across laboratory, collider, and cosmological settings, including scenarios with multiple axion fields and extra-dimensional axion patterns.</p>
+							<details class="more">
+								<summary>Read more</summary>
+								<p>Selected work: <a href="https://arxiv.org/abs/2512.16837" target="_blank" rel="noopener">Multiple Axions in Laboratory Experiments</a>, <a href="https://arxiv.org/abs/2412.00179" target="_blank" rel="noopener">Extra-dimensional axion patterns</a> (Phys. Rev. D 111 (2025) 075006), and <a href="https://arxiv.org/abs/2212.11290" target="_blank" rel="noopener">Probing HNL-ALP couplings at colliders</a>.</p>
+							</details>
+						</div>
+					</div>
+				</section>
+
+				<section class="section">
+					<div class="card topic-card">
+						<img src="./Images/Dark_Matter.jpg" alt="Dark matter halo simulation">
+						<div>
+							<h2 class="section-title" style="border:none;padding:0;margin-bottom:8px;">Dark Matter</h2>
+							<p>The nature of dark matter remains one of the biggest open questions in physics. I explore scenarios where dark matter interacts primarily through gravity or gravity-adjacent portals — including massive spin-2 mediators in warped extra dimensions and Majoron dark matter connected to thermal leptogenesis.</p>
+							<details class="more">
+								<summary>Read more</summary>
+								<p>Selected work: <a href="https://arxiv.org/abs/2605.18944" target="_blank" rel="noopener">The Majoron Cosmological Window: Dark Matter and Thermal Leptogenesis</a>, <a href="https://arxiv.org/abs/2208.03153" target="_blank" rel="noopener">Warm dark matter from a gravitational freeze-in in extra dimensions</a> (JHEP 04 (2023) 032), and <a href="https://arxiv.org/abs/2105.06794" target="_blank" rel="noopener">Dark matter interacting via a massive spin-2 mediator in warped extra-dimensions</a> (JHEP 11 (2021) 036). Image credit: <em>Halo and Galaxy Formation Histories from the Millennium Simulation</em>, G. Lemson et al. (2006).</p>
+							</details>
+						</div>
+					</div>
+				</section>
+
+				<section class="section">
+					<div class="card">
+						<h2 class="section-title" style="border:none;padding:0;margin-bottom:8px;">Neutrinos Beyond 4D</h2>
+						<p>More recently I have worked on building a comprehensive extra-dimensional neutrino phenomenology, and on how scalar-tensor gravity is constrained by neutrino physics.</p>
+						<details class="more">
+							<summary>Read more</summary>
+							<p>Selected work: <a href="https://arxiv.org/abs/2512.02101" target="_blank" rel="noopener">Do neutrinos dream in 5D? Towards a comprehensive extra-dimensional neutrino phenomenology</a> (JHEP 05 (2026) 152) and <a href="https://arxiv.org/abs/2512.13798" target="_blank" rel="noopener">Neutrino Constraints on Scalar-Tensor Gravity</a>.</p>
+						</details>
+					</div>
+				</section>
+
+				<section class="section">
+					<div class="card">
+						<h2 class="section-title" style="border:none;padding:0;margin-bottom:8px;">Transient &amp; Gravitational-Wave Signals</h2>
+						<p>Black hole formation and other transient astrophysical events can leave characteristic imprints in wave-like dark matter and axion experiments, and metastable cosmic strings can source a distinctive gravitational-wave background. I have been developing the phenomenology of these transient BSM signals.</p>
+						<details class="more">
+							<summary>Read more</summary>
+							<p>Selected work: <a href="https://arxiv.org/abs/2602.06112" target="_blank" rel="noopener">Scalar Tsunamis from Black Hole Formation</a>, <a href="https://arxiv.org/abs/2408.10296" target="_blank" rel="noopener">Star shearing season: transient signals in wave-like dark matter experiments from black hole formation</a> (Eur. Phys. J. C 85 (2025) 155), and <a href="https://arxiv.org/abs/2606.02689" target="_blank" rel="noopener">Thermal Metastable Strings in One-Scale Models and Gravitational Waves</a>.</p>
+						</details>
+					</div>
+				</section>
+
+				<section class="section">
+					<div class="callout">
+						This page highlights themes rather than a full list. The complete, continuously updated bibliography is on the <a href="./publications.html">Publications</a> page.
+					</div>
+				</section>
 			</div>
 		</div>
 	</main>
 
-		
-	<footer class="page-footer">
-	  	<div class="container">
-	    	<div class="row">
-	    		<div class="col-lg-8 col-md-8 col-sm-12">
-	    			<h6 class="text-uppercase font-weight-bold">Additional Information</h6>
-	    			<p>This website was created as online and more general digital CV. <br> Please report any bugs at this <a style="color: #ccc;" href="mailto:arturo.degiorgi@uam.es" alt="Email"><b>address</b></a>.</p>
-	    		</div>
-	    		<div class="col-lg-4 col-md-4 col-sm-12">
-	    			<h6 class="text-uppercase font-weight-bold">Contact</h6>
-	    			<p>
-	    			<br/>arturo.degiorgi@uam.es
-	    			</p>
-	    		</div>
-	 		</div>
-    	  	<div class="footer-copyright text-center">
-                © 2022 Copyright: Deg&Co
-                <br>
-                Last Update: 12.02.2022
-            </div>
-        </div>
+	<footer class="site-footer">
+		<div class="container">
+			<div class="footer-grid">
+				<div>
+					<h6>Additional Information</h6>
+					<p>This website serves as an online, more general digital CV.<br>Please report any bugs to this <a href="mailto:arturo.de-giorgi@durham.ac.uk">address</a>.</p>
+				</div>
+				<div>
+					<h6>Contact</h6>
+					<p>arturo.de-giorgi@durham.ac.uk</p>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				© 2026 Arturo de Giorgi · Last update: July 2026
+			</div>
+		</div>
 	</footer>
 
-<!-- Read More / Less script -->
-<script>
-function ReadDiff(Vdots, Vmore, VmyBtn) {
-  var dots = document.getElementById(Vdots);
-  var moreText = document.getElementById(Vmore);
-  var btnText = document.getElementById(VmyBtn);
-
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more"; 
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less"; 
-    moreText.style.display = "inline";
-  }
-}
-</script>
-
-<!-- Add Jquey & Co -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="./script.js"></script>
 </body>
 </html>

@@ -1,362 +1,264 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
+	<script>(function(){try{var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width = device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CV — Arturo de Giorgi</title>
 
-	<title>CV </title>
-
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link href="./style.css" type="text/css" rel="stylesheet">
-    <!-- Add fontawesome -->
-    <script src="https://kit.fontawesome.com/568a2adcad.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="./main.css" type="text/css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/568a2adcad.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-	<header>
-	<nav class="navbar navbar-expand-md">
-	  <a class="navbar-brand" href="./index.html">Arturo de Giorgi</a>
-	  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-	  <span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse" id="main-navigation">
-	    <ul class="navbar-nav">
-	    	<li class="nav-item">
-	     		<a class="nav-link" href="./index.html">Home</a>
-	    	</li>
-	    	<li class="nav-item">
-	    		<a class="nav-link" href="./cv.html">CV</a>
-	    	</li>
-            <li class="nav-item">
-                <a class="nav-link" href="./research_interests.html">Research Interests</a>
-            </li>
-	    	<li class="nav-item">
-	    		<a class="nav-link" href="./publications.html">Publications</a>
-	    	</li>
-            <li class="nav-item">
-                <a class="nav-link" href="./talks.html">Talks and Conferences</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./posters.html">Posters</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./hobbies.html">Non-Scientific Activities</a>
-            </li>
-	    	<!--<li class="nav-item">
-	    		<a class="nav-link" href="./didactics.html">Didactics</a>
-	    	</li>-->
-            <!--<li class="nav-item">
-                <a class="nav-link" href="./contact.php">Contact</a>
-            </li>-->
-	    </ul>
-	  </div>
-	</nav>
+	<header class="site-header">
+		<nav class="nav">
+			<a class="nav-brand" href="./index.html">Arturo de Giorgi</a>
+			<div class="nav-right">
+				<ul class="nav-links">
+					<li><a href="./index.html">Home</a></li>
+					<li><a class="active" href="./cv.html">CV</a></li>
+					<li><a href="./research_interests.html">Research Interests</a></li>
+					<li><a href="./publications.html">Publications</a></li>
+					<li><a href="./talks.html">Talks and Conferences</a></li>
+					<li><a href="./posters.html">Posters</a></li>
+					<li><a href="./hobbies.html">Non-Scientific Activities</a></li>
+				</ul>
+				<button class="theme-toggle" type="button" aria-label="Toggle dark mode">🌙</button>
+				<button class="nav-toggle" type="button" aria-label="Toggle navigation">
+					<span></span><span></span><span></span>
+				</button>
+			</div>
+		</nav>
 	</header>
 
-	<main class="page-header header container-fluid">
-		<div class="description">
-            <br>
-	  		<h1>CV</h1>
-            <p>Here you can find a (old) summary of my CV. 
-                <br>
-                Nevertheless, you can download the <b>most updated</b> version <a class="generic-link" href="./Files/CV_deGiorgi.pdf"><b>here</b> </a> in its complete form as pdf.</p>
-		</div>
-			<div class="row">
-				<div class="col-lg-3 col-md-3 col-sm-12" id="about-info-white">
-					<figure id="profile-image">
-						<img  src="./Images/deGiorgi_web.jpeg" style="height: 70%; width:70%;   border-radius: 50%;" alt="Arturo de Giorgi">
-					</figure>
-                    <br>
-                    <hr class="hr_style">
-                        <h5>Ph.D.</h5>
-                        <img  src="./Images/ift_logo.png"  alt="IFT Logo" style="margin-left:8%; height: 8em; width:16em;">
-                    <hr class="hr_style">
-                        <ul id="about-external">
-                            <li><i class="fas fa-envelope" aria-hidden="true" style="margin-right:.2em;"></i> <a class="info-link" href="mailto:arturo.degiorgi@uam.es">Email</a></li>
-                            <li><i class="fab fa-linkedin-in" aria-hidden="true" style="margin-right:.32em;"></i> <a class="info-link" href="https://www.linkedin.com/in/arturo-de-giorgi-8a6711121/">Linkedin</a></li>
-                            <li><i class="fas fa-seedling" aria-hidden="true" style=";margin-right:.2em;"></i> <a class="info-link" href="https://inspirehep.net/authors/1838021">INSPIRE</a></li>
-                            <li><!--<div itemscope itemtype="https://schema.org/Person">--><a itemprop="sameAs"class="info-link" content="https://orcid.org/0000-0002-9260-5466" href="https://orcid.org/0000-0002-9260-5466" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.4em;" alt="ORCID iD icon">ORCID</a><!--</div>--></li>
-                            <li><img  src="./Images/Artupia_logo.png" style="height: 1em; width:1em; margin-right: .2em;" alt="Artupia Logo" > <a href="https://artupia.com" class="info-link" target="_blank">Artupia</a></li>
-                            <li><i class="fab fa fa-github" aria-hidden="true" style=";margin-right:.2em;"></i> <a href="https://github.com/DegCo" class="info-link" target="_blank">Github</a></li>
-                        </ul>
-                    <hr class="hr_style">
-	    		</div>
+	<main class="container">
+		<h1 class="page-title">Curriculum Vitae</h1>
+		<p class="page-subtitle">A summary of my academic path. The <a href="./Files/CV_deGiorgi.pdf" target="_blank" rel="noopener">full CV (PDF)</a> has the complete, up-to-date list of publications, talks, and service.</p>
 
-	    		<div class="col-lg-9 col-md-9 col-sm-12">
-                    <!--<div  id="scrollable">-->
-    				<div class="square-section">
-    					<h3> Education </h3>
-    						<br>
-                            <div class="row">
-                                <div class="logos col-lg-3 col-md-3 col-sm-12">
-                                    <h6>September 2021 - Today</h6>
-                                    <img  src="./Images/ift_logos.png" class="logo-image" alt="IFT Logo">
-                                </div>
-                                <div class="col-lg-9 col-md-9 col-sm-12">
-                                    <h6> <b>Ph.D. </b> in <b>Physics </b></h6>
-                                    <p class="uni-info">
-                                       Instituto de Física Teórica UAM-CSIC, Madrid (Spain) <big class="flag">🇪🇸 </big>
-                                        <br>
-                                        <b>Advisor:</b> Dr. Luca Merlo,
-                                    </p>
-                                </div>
-                            </div>
-                            <br>
-    						<div class="row">
-    							<div class="logos col-lg-3 col-md-3 col-sm-12">
-    								<h6>October 2018 - December 2020</h6>
-    								<img  src="./Images/LMU_logo.jpg" class="logo-image" alt="LMU Logo">
-    							</div>
-    							<div class="col-lg-9 col-md-9 col-sm-12">
-    								<h6> <b>Master of Science </b> in <b>Physics </b></h6>
-    								<p class="uni-info">
-    									Ludwig-Maximilian-Universit&#228;t M&#252;nchen, Munich (Germany) <big class="flag">🇩🇪 </big>
-    									<br>
-    									<b>Thesis:</b> <i>Dark Matter Production in Warped Extra-Dimensions</i>
-    									<br>
-    									<b>Advisor:</b> Dr. Habil. Georg Raffelt,
-    									<br>
-    									<b>Co-advisor: </b> JProf. Dr. Stefan Vogl
-    									<br>
-    									<b>Final Grade:</b> 1.02 (Max.: 1.00 - Min.: 4.00)
-    									<br>
-    									<b>Final Grade Thesis:</b> 1.00 (Max.: 1.00 - Min.: 4.00)
-    								</p>
-    							</div>
-    						</div>
-    						<br>
-    						<div class="row" >
-    							<div class="logos col-lg-3 col-md-3 col-sm-12">
-    								<h6>October 2015 - July 2018</h6>
-    								<img  src="./Images/Padova_logo.jpg" class="logo-image" alt="Univerità degli Studi di Padova Logo">
-    							</div>
-    							<div class="col-lg-9 col-md-9 col-sm-12">
-    								<h6> <b>Bachelor of Science </b> in <b>Physics </b></h6>
-    								<p class="uni-info">
-    									Università degli Studi di Padova, Padua (Italy) <big class="flag">🇮🇹</big>
-    									<br>
-    									<b>Thesis:</b> <i>Non-Abelian Anyons and Quantum Computation</i>
-    									<br>
-    									<b>Advisor:</b> Prof. Dr. Pieralberto Marchetti
-    									<br>
-    									<b>Final Grade:</b> 109/110 
-    								</p>
-    							</div>
-    						</div>
-                            <br>
-                            <div class="row" >
-                                <div class="logos col-lg-3 col-md-3 col-sm-12">
-                                    <h6>October 2010 - July 2015</h6>
-                                    <img  src="./Images/Ulivi_logo.png" class="logo-image" alt="Liceo Scientifico Giacomo Ulivi Logo">
-                                </div>
-                                <div class="col-lg-9 col-md-9 col-sm-12">
-                                    <h6> <b>High-School Diploma</b>
-                                    <p class="uni-info">
-                                        Liceo Scientifico Giacomo Ulivi, Parma (Italy) <big class="flag">🇮🇹</big>
-                                        <br>
-                                        <b>Final Grade:</b> 110/110 
-                                    </p>
-                                </div>
-                            </div>
-    				</div>
-                    <br>
-                    <div class="square-section">
-                        <h3> Schools </h3>
-                        <br>
-                        <div class="row">
-                            <div class="logos col-lg-3 col-md-3 col-sm-12">
-                                <h6>December 2019 - December 2020</h6>
-                                <img  src="./Images/GGI_logo.png" class="logo-image" alt="GGI Logo">
-                            </div>
-                            <div class="col-lg-9 col-md-9 col-sm-12">
-                                <h6> <b>Doctoral School</b></h6>
-                                <p class="uni-info">
-                                    <b>on:</b> Theoretical Aspects of Astroparticle Physics, Cosmology and Gravitation
-                                    <br>
-                                    <b>at:</b> Galileo Galilei Institute for Theoretical Physics, Florence <big class="flag">🇮🇹 </big>
-                                </p>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-    				<br>
-    				<div class="square-section">
-    					<h3> Work Experience and Internships </h3>
-                        <br>
-                        <div class="row">
-                            <div class="logos col-lg-3 col-md-3 col-sm-12">
-                                <h6>May 2021 - Today</h6>
-                                <img  src="./Images/ETH_logo.jpg" class="logo-image" alt="ETH Logo">
-                            </div>
-                            <div class="col-lg-9 col-md-9 col-sm-12">
-                                <h6> <b>Research Internship</b></h6>
-                                <p class="uni-info">
-                                    <b>at:</b> ETH, Zurich (Switzerland) <big class="flag">🇨🇭 </big>
-                                    <br>
-                                    <b>on:</b> Machine Learning and Phase Transitions
-                                    <br>
-                                    <b>group of:</b> Prof. Dr. M.K. Marinkovic,
-                                </p>
-                                </p>
-                            </div>
-                        </div>
-						<br>
-						<div class="row">
-							<div class="logos col-lg-3 col-md-3 col-sm-12">
-								<h6>December 2019 - December 2020</h6>
-								<img  src="./Images/MPP_logo.png" class="logo-image" alt="MPP Logo">
-							</div>
-							<div class="col-lg-9 col-md-9 col-sm-12">
-								<h6> <b>Student Research Assistant</b></h6>
-								<p class="uni-info">
-									<b>at:</b> Max-Planck-Institut f&#252;r Physik, Munich (Germany) <big class="flag">🇩🇪 </big>
-									<br>
-									<b>Purpose:</b> Master Thesis
-									<br>
-									<b>Advisor:</b> Dr. Habil. Georg Raffelt,
-									<br>
-									<b>Co-advisor: </b> JProf. Dr. Stefan Vogl
-									<br>
-									<b>Final Grade Thesis:</b> 1.00 (Max.: 1.00 - Min.: 4.00)
-								</p>
-								</p>
-							</div>
-						</div>
-    				</div>
-                    <br>
-                    <div class="square-section">
-                        <h3> Teaching Experience </h3>
-                        <br>
-                        <div class="row">
-                            <div class="logos col-lg-3 col-md-3 col-sm-12">
-                                <h6>October 2020 - December 2020</h6>
-                                <img  src="./Images/LMU_logo.jpg" class="logo-image" alt="LMU Logo">
-                            </div>
-                            <div class="col-lg-9 col-md-9 col-sm-12">
-                                <h6> <b>Academic Tutor</b></h6>
-                                <p class="uni-info">
-                                    <b>at:</b> Ludwig-Maximilian-Universit&#228;t M&#252;nchen, Munich (Germany) <big class="flag">🇩🇪 </big>
-                                    <br>
-                                    <b>Course:</b> <i>Classical and Quantum Simulations of Physical Systems</i>
-                                    <br>
-                                    <b>Held by:</b> Prof. Dr. M.K. Marinkovic
-                                </p>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="logos col-lg-3 col-md-3 col-sm-12">
-                                <h6>July 2020 - September 2020</h6>
-                                <img  src="./Images/LMU_logo.jpg" class="logo-image" alt="LMU Logo">
-                            </div>
-                            <div class="col-lg-9 col-md-9 col-sm-12">
-                                <h6> <b>Academic Tutor</b></h6>
-                                <p class="uni-info">
-                                    <b>at:</b> Ludwig-Maximilian-Universit&#228;t M&#252;nchen, Munich (Germany) <big class="flag">🇩🇪 </big>
-                                    <br>
-                                    <b>Course:</b> <i>Introduction to Lattice Gauge Theories</i>
-                                    <br>
-                                    <b>Held by:</b> Prof. Dr. M.K. Marinkovic
-                                </p>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="logos col-lg-3 col-md-3 col-sm-12">
-                                <h6>October 2019 - March 2020</h6>
-                                <img  src="./Images/LMU_logo.jpg" class="logo-image" alt="LMU Logo">
-                            </div>
-                            <div class="col-lg-9 col-md-9 col-sm-12">
-                                <h6> <b>Academic Tutor</b> </h6>
-                                <p class="uni-info">
-                                    <b>at:</b> Ludwig-Maximilian-Universit&#228;t M&#252;nchen, Munich (Germany) <big class="flag">🇩🇪 </big>
-                                    <br>
-                                    <b>Course:</b> <i>Quantum Mechanics II </i>
-                                    <br>
-                                    <b>Held by:</b> Prof. Dr. V. Mukhanov
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-    				<br>
-    				<div class="square-section">
-    					<h3> Languages </h3>
-						<br>
+		<div class="cv-layout">
+			<!-- Sidebar -->
+			<aside class="cv-sidebar">
+				<div class="card">
+					<img class="cv-sidebar-photo" src="./Images/deGiorgi_web.jpg" alt="Arturo de Giorgi">
+					<h3>Arturo de Giorgi</h3>
+					<p class="role">Postdoctoral Research Associate<br>IPPP, Durham University</p>
+					<ul class="cv-links">
+						<li><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:arturo.de-giorgi@durham.ac.uk">arturo.de-giorgi@durham.ac.uk</a></li>
+						<li><i class="fab fa-linkedin-in" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/arturo-de-giorgi-8a6711121/" target="_blank" rel="noopener">LinkedIn</a></li>
+						<li><i class="fas fa-seedling" aria-hidden="true"></i> <a href="https://inspirehep.net/authors/1838021" target="_blank" rel="noopener">INSPIRE: A.De.Giorgi.1</a></li>
+						<li><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="" style="width:1em;vertical-align:-1px;"> <a href="https://orcid.org/0000-0002-9260-5466" target="_blank" rel="noopener me">ORCID</a></li>
+						<li><a href="https://www.webofscience.com/wos/author/record/JDW-8706-2023" target="_blank" rel="noopener">Web of Science: JDW-8706-2023</a></li>
+						<li><i class="fas fa-graduation-cap" aria-hidden="true"></i> <a href="https://scholar.google.com/citations?user=iUJl0fgAAAAJ&hl=it&oi=ao" target="_blank" rel="noopener">Google Scholar</a></li>
+					</ul>
+					<a class="btn" href="./Files/CV_deGiorgi.pdf" target="_blank" rel="noopener" style="width:100%;">Download full CV (PDF)</a>
+				</div>
+			</aside>
+
+			<!-- Main content -->
+			<div>
+				<section class="section">
+					<h2 class="section-title">Research Interests</h2>
+					<div class="card prose">
+						<p><strong>Theoretical Particle Physics — BSM Phenomenology.</strong> My research focuses on the phenomenology of physics beyond the Standard Model, with emphasis on extra-dimensional scenarios and their cosmological and astrophysical signatures. A central theme is the Kaluza-Klein (KK) gravitational sector: its spin-2, vector, and scalar towers, the sum rules and symmetry structures governing their interactions, and their interplay with dark matter, axions, and neutrinos across collider, astrophysical, and cosmological scales.</p>
 						<div>
-							<div class="row">
-    							<div class="col-lg-3 col-md-3 col-sm-12">
-    								<h5> Language </h5>
-    							</div>
-    							<div class="col-lg-9 col-md-9 col-sm-12">
-    								<h5> Level </h5>
-    							</div>
-    						</div>
-							<div class="row">
-							<div class="col-lg-3 col-md-3 col-sm-12">
-								<h6><big class="flag">🇮🇹</big>	Italian	</h6>
-							</div>
-							<div class="col-lg-9 col-md-9 col-sm-12">
-								<h6> C2  </h6>
+							<span class="keyword-chip">BSM</span>
+							<span class="keyword-chip">Extra Dimensions</span>
+							<span class="keyword-chip">Kaluza-Klein Phenomenology</span>
+							<span class="keyword-chip">Massive Spin-2</span>
+							<span class="keyword-chip">Dark Matter</span>
+							<span class="keyword-chip">Axions / ALPs</span>
+							<span class="keyword-chip">Neutrinos</span>
+							<span class="keyword-chip">Gravitational Waves</span>
+						</div>
+					</div>
+				</section>
+
+				<section class="section">
+					<h2 class="section-title">Education</h2>
+					<div class="card">
+						<div class="entry">
+							<div class="entry-date">09/2021 – 09/2024<span class="entry-flag-big" title="Spain">🇪🇸</span></div>
+							<div>
+								<p class="entry-title">Ph.D. in Physics</p>
+								<p class="entry-org">Instituto de Física Teórica (IFT UAM/CSIC), Madrid, Spain</p>
+								<p class="entry-meta">Cum Laude, International Mention · Advisor: Prof. Dr. Luca Merlo<br>Thesis: <em>The Phenomenological Landscape of Leptophilic ALPs</em></p>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-lg-3 col-md-3 col-sm-12">
-								<h6><big class="flag">🇬🇧</big>		English </h6>
-							</div>
-							<div class="col-lg-9 col-md-9 col-sm-12">
-								<h6> C1 </h6>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-lg-3 col-md-3 col-sm-12">
-								<h6><big class="flag">🇩🇪</big>		German </h6>
-							</div>
-							<div class="col-lg-9 col-md-9 col-sm-12">
-								<h6> B1 </h6>
+						<div class="entry">
+							<div class="entry-date">10/2018 – 12/2020<span class="entry-flag-big" title="Germany">🇩🇪</span></div>
+							<div>
+								<p class="entry-title">M.Sc. in Physics</p>
+								<p class="entry-org">LMU Munich, Germany</p>
+								<p class="entry-meta">Final grade: 1.02/1.00 · Advisors: Dr. G. Raffelt, S. Vogl<br>Thesis: <em>Dark Matter Production in Warped Extra-Dimensions</em></p>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col-lg-3 col-md-3 col-sm-12">
-								<h6><big class="flag">🇫🇷</big>		French </h6>
-							</div>
-							<div class="col-lg-9 col-md-9 col-sm-12">
-								<h6> A1 </h6>
+						<div class="entry">
+							<div class="entry-date">09/2015 – 07/2018<span class="entry-flag-big" title="Italy">🇮🇹</span></div>
+							<div>
+								<p class="entry-title">B.Sc. in Physics</p>
+								<p class="entry-org">University of Padova, Italy</p>
+								<p class="entry-meta">Final grade: 109/110 · Advisor: Prof. Dr. P. Marchetti<br>Thesis: <em>Non-Abelian Anyons and Quantum Computation</em></p>
 							</div>
 						</div>
-						<!--</div> -->
-    				</div>
-                </div>
+					</div>
+				</section>
+
+				<section class="section">
+					<h2 class="section-title">Academic Stays (2+ Months)</h2>
+					<div class="card">
+						<div class="entry">
+							<div class="entry-date">04–06/2025<span class="entry-flag-big" title="Japan">🇯🇵</span></div>
+							<div><p class="entry-title">Visitor via QUPIP Grant</p><p class="entry-org">QUP–KEK, Tsukuba, Japan — group of Dr. V. Takhistov</p></div>
+						</div>
+						<div class="entry">
+							<div class="entry-date">10–12/2023<span class="entry-flag-big" title="Germany">🇩🇪</span></div>
+							<div><p class="entry-title">Visitor</p><p class="entry-org">Ruprecht-Karls-Universität Heidelberg — group of Prof. Dr. J. Jaeckel</p></div>
+						</div>
+						<div class="entry">
+							<div class="entry-date">06–08/2023<span class="entry-flag-big" title="United States">🇺🇸</span></div>
+							<div><p class="entry-title">Visitor</p><p class="entry-org">Harvard University, Boston — group of Prof. Dr. C. Argüelles-Delgado</p></div>
+						</div>
+						<div class="entry">
+							<div class="entry-date">05–08/2021<span class="entry-flag-big" title="Switzerland">🇨🇭</span></div>
+							<div><p class="entry-title">Research Internship</p><p class="entry-org">ETH Zürich — group of Prof. Dr. M.K. Marinkovic</p></div>
+						</div>
+						<div class="entry">
+							<div class="entry-date">01–11/2020<span class="entry-flag-big" title="Germany">🇩🇪</span></div>
+							<div><p class="entry-title">Student Research Assistant</p><p class="entry-org">Max Planck Institut für Physik, Munich — group of Dr. Habil. G. Raffelt</p></div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section">
+					<h2 class="section-title">Grants, Prizes &amp; Honors</h2>
+					<div class="card">
+						<div class="entry">
+							<div class="entry-date">09/2025</div>
+							<div>
+								<p class="entry-title">2025 Prize in Theoretical Physics "Giuliano Preparata"</p>
+								<p class="entry-org">Italian Physical Society (SIF)</p>
+								<p class="entry-meta">"For significant contributions to theoretical and phenomenological aspects of physics beyond the Standard Model, in particular on new low-mass particles and extra dimensions."</p>
+							</div>
+						</div>
+						<div class="entry">
+							<div class="entry-date">04/2025</div>
+							<div><p class="entry-title">QUP Internship Program (QUPIP)</p><p class="entry-org">International Center for Studies of the Universe and Particles (WPI-QUP), KEK, Tsukuba, Japan</p></div>
+						</div>
+						<div class="entry">
+							<div class="entry-date">09/2021</div>
+							<div><p class="entry-title">Doctoral Grant — EU Horizon 2020, Marie Skłodowska-Curie</p><p class="entry-org">Grant agreement No 860881-HIDDeN, Early Stage Researcher (hiddeneu.eu)</p></div>
+						</div>
+						<div class="entry">
+							<div class="entry-date">2016 – 2024</div>
+							<div>
+								<p class="entry-title">Minor awards</p>
+								<p class="entry-meta">1st Prize, Poster Competition, Invisible24 (07/2024) &amp; Invisible23 (09/2023) Schools · Best Poster, Invisible22 School (07/2022) · "Premio Gelati" high-school scholarship, €1,000 (03/2016)</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section">
+					<h2 class="section-title">Community &amp; Leadership</h2>
+					<div class="card">
+						<div class="entry">
+							<div class="entry-date">2023 – Today</div>
+							<div>
+								<p class="entry-title">COST Action CA21106 — COSMIC WISPers</p>
+								<p class="entry-meta">Co-Leader, Working Group 1 – Theory (04/2025–today) · Grants Evaluation Committee (09/2024–today) · Young Researcher Council Representative (07/2024–05/2025) · Monthly Colloquium Organiser (01/2023–07/2024)</p>
+							</div>
+						</div>
+						<div class="entry">
+							<div class="entry-date">2024 – Today</div>
+							<div>
+								<p class="entry-title">Editorial Experience</p>
+								<p class="entry-meta">Journal Referee, JHEP (06/2026–today) · Guest Editor, Physics Letters B (03/2026–today) · Journal Referee, EPJC (03/2025–today) · Editor, Proceedings of the 2nd COSMIC WISPers Training School (06/2024)</p>
+							</div>
+						</div>
+						<div class="entry">
+							<div class="entry-date">2022 – 2026</div>
+							<div>
+								<p class="entry-title">Organization of International Events</p>
+								<p class="entry-meta">International Organizing Committee, CA21106 4th General Meeting, Corfu Summer Institute (06/2026) · Junior Local Organizing Committee, Extended Workshop NuTs 2022, IFT Madrid (05/2022)</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section">
+					<h2 class="section-title">Teaching</h2>
+					<div class="card">
+						<div class="entry">
+							<div class="entry-date">09/2025 – 09/2026<span class="entry-flag-big" title="United Kingdom">🇬🇧</span></div>
+							<div><p class="entry-title">Tutor, STFC HEP Summer School</p><p class="entry-org">UK national PhD training school in HEP (2025 &amp; 2026 editions)</p></div>
+						</div>
+						<div class="entry">
+							<div class="entry-date">10/2024 – 04/2026<span class="entry-flag-big" title="United Kingdom">🇬🇧</span></div>
+							<div><p class="entry-title">Tutor, Foundations of Physics 1</p><p class="entry-org">Durham University · Level 1 course, 40 hours (2024–25 &amp; 2025–26)</p></div>
+						</div>
+						<div class="entry">
+							<div class="entry-date">10/2019 – 12/2020<span class="entry-flag-big" title="Germany">🇩🇪</span></div>
+							<div><p class="entry-title">Tutor, Master courses</p><p class="entry-org">LMU Munich · Classical and Quantum Simulations of Physical Systems; Introduction to Lattice Gauge Theories; Quantum Mechanics II</p></div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section">
+					<h2 class="section-title">Publications, Talks &amp; Outreach</h2>
+					<div class="card">
+						<p class="prose" style="margin-bottom:16px;">21 papers published (or in progress) in peer-reviewed journals, 4 community white papers, and 3 proceedings — recognised by the 2025 SIF Prize in Theoretical Physics. 13 conference talks (8 plenary, 5 parallel) and 16 invited seminars worldwide, plus public lectures, podcast appearances, and masterclasses reaching 2,000+ students and listeners.</p>
+						<div class="callout">
+							Full, continuously updated lists live on the dedicated pages: <a href="./publications.html">Publications</a>, <a href="./talks.html">Talks and Conferences</a>, and <a href="./posters.html">Posters</a>. These are next in line for a refresh.
+						</div>
+					</div>
+				</section>
+
+				<section class="section">
+					<h2 class="section-title">Languages &amp; Computer Skills</h2>
+					<div class="card">
+						<table class="fact-table">
+							<tr><td>Native</td><td>Italian</td></tr>
+							<tr><td>Fluent</td><td>English, Spanish</td></tr>
+							<tr><td>Basic</td><td>German</td></tr>
+							<tr><td>Advanced</td><td>Mathematica, LaTeX, Python</td></tr>
+							<tr><td>Intermediate</td><td>C++, FeynCalc, FeynRules, xAct, Flavio</td></tr>
+							<tr><td>Basic</td><td>HTML, CSS</td></tr>
+						</table>
+					</div>
+				</section>
+
+				<section class="section">
+					<div class="callout">
+						Non-scientific involvement — Rotaract Madrid Serrano, mentoring with Lead the Future, the IFT Equity, Diversity and Inclusion Committee, and Artupia — is on the <a href="./hobbies.html">Non-Scientific Activities</a> page.
+					</div>
+				</section>
 			</div>
 		</div>
 	</main>
-<!---->
-		
-	<footer class="page-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-8 col-sm-12">
-                    <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
-                    <p>This website was created as online and more general digital CV. <br> Please report any bugs at this <a style="color: #ccc;" href="mailto:arturo.degiorgi@uam.es" alt="Email"><b>address</b></a>.</p>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-12">
-                    <h6 class="text-uppercase font-weight-bold">Contact</h6>
-                    <p>
-                    <br/>arturo.degiorgi@uam.es
-                    </p>
-                </div>
-            </div>
-            <div class="footer-copyright text-center">
-                © 2022 Copyright: Deg&Co
-                <br>
-                Last Update: 12.02.2022
-            </div>
-        </div>
-    </footer>
 
-<!-- Add Jquey & Co -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<footer class="site-footer">
+		<div class="container">
+			<div class="footer-grid">
+				<div>
+					<h6>Additional Information</h6>
+					<p>This website serves as an online, more general digital CV.<br>Please report any bugs to this <a href="mailto:arturo.de-giorgi@durham.ac.uk">address</a>.</p>
+				</div>
+				<div>
+					<h6>Contact</h6>
+					<p>arturo.de-giorgi@durham.ac.uk</p>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				© 2026 Arturo de Giorgi · Last update: July 2026
+			</div>
+		</div>
+	</footer>
+
+	<script src="./script.js"></script>
 </body>
 </html>

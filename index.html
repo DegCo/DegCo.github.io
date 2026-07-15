@@ -1,246 +1,255 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
+	<script>(function(){try{var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width = device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Arturo de Giorgi</title>
+	<meta name="description" content="Arturo de Giorgi — Postdoctoral Research Associate, IPPP Durham University. Theoretical particle physics, BSM phenomenology, extra dimensions, axions, dark matter.">
 
-	<title>Homepage </title>
-
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link href="./style.css" type="text/css" rel="stylesheet">
-	<!-- Add fontawesome -->
-    <script src="https://kit.fontawesome.com/568a2adcad.js" crossorigin="anonymous"></script>
-
-    <!-- Include Maps for Locations -->
-
-
-    <script>
-	    // Initialize and add the map
-	    function initMap() {
-	        // The locations
-	        const madrid = {lat: 40.550206288,lng: -3.68764811578};
-	        const freiburg = {lat: 48.027159,lng: 7.8508056236};
-	        const pittsburgh = {lat:40.44638634, lng: -79.96266963308899};
-	        const zurich = {lat: 47.4102590,lng: 8.5085712};
-	        const munich = { lat: 48.149507802, lng: 11.57956723};
-	        const padova = { lat: 45.409, lng: 11.8858};
-	        const parma = { lat: 44.80171, lng: 10.32797};
-
-	        // Details
-	        var locations = [madrid, freiburg, pittsburgh, zurich, munich, padova, parma];
-	        var colors =["red", "yellow", "yellow", "blue", "red", "red", "green"];
-	        const labels = ["Ph.D.", "Talk", "Talk", "ETH", "MSc", "BSc", "Home"]
-
-	        // The map, centered in Munich
-	        const map = new google.maps.Map(document.getElementById("map"), {
-	          zoom: 4,
-	          center: munich,
-	        });
-
-	        const infowindows = [
-	        new google.maps.InfoWindow({
-				content: '<div id="content">' +
-				    '<div id="siteNotice">' +
-				    "</div>" +
-				    '<h2 id="firstHeading" class="firstHeading">UAM-IFT - Ph.D</h2>' +
-				    '<div id="bodyContent">' +
-				    "<p>In September 2021 I started a Ph.D at <b>UAM-IFT</b>. in Madrid</p>" +
-				    "</div>" +
-				    "</div>",
-					}),
-				new google.maps.InfoWindow({
-				content: '<div id="content">' +
-				    '<div id="siteNotice">' +
-				    "</div>" +
-				    '<h2 id="firstHeading" class="firstHeading">ETH - Research Internship</h2>' +
-				    '<div id="bodyContent">' +
-				    "<p>In 2021 I managed to pursue a research internship <b>ETH</b> on Machine Learning.</p>" +
-				    "</div>" +
-				    "</div>",
-					}),
-				new google.maps.InfoWindow({
-				content: '<div id="content">' +
-				    '<div id="siteNotice">' +
-				    "</div>" +
-				    '<h2 id="firstHeading" class="firstHeading">LMU - Master in Physcis</h2>' +
-				    '<div id="bodyContent">' +
-				    "<p>In 2020 I completed my Master in Physics at <b>LMU</b>.</p>" +
-				    "</div>" +
-				    "</div>",
-					}),
-				new google.maps.InfoWindow({
-				content: '<div id="content">' +
-				    '<div id="siteNotice">' +
-				    "</div>" +
-				    '<h2 id="firstHeading" class="firstHeading">Unipd - Bachelor in Physics</h2>' +
-				    '<div id="bodyContent">' +
-				    "<p>In 2015 I completed my Bachelor in Physics at <b>Unipd</b>.</p>" +
-				    "</div>" +
-				    "</div>",
-					}),
-				new google.maps.InfoWindow({
-				content: '<div id="content">' +
-				    '<div id="siteNotice">' +
-				    "</div>" +
-				    '<h2 id="firstHeading" class="firstHeading">Parma</h2>' +
-				    '<div id="bodyContent">' +
-				    "<p><b>Parma</b>, is my hometown.</p>" +
-				    "</div>" +
-				    "</div>",
-					})
-			];
-
-	        // The markers
-	        var marker; 
-	        var markerList = [];
-	        for(i = 0; i < locations.length; i++){
-	        	// Create markers
-	        	marker = new google.maps.Marker({
-	          	position: locations[i],
-	          	icon: {url: "http://maps.google.com/mapfiles/ms/icons/"+colors[i]+"-dot.png"},
-	          	//label: labels[i],
-	          	title: labels[i],
-	          	map: map,
-	        	});
-	        	//update list
-	        	//markerList.add(marker);
-	        }
-	        
-	        //add descriptions
-	        /*for(i = 0; i < markerList.length; i++){
-	    		markerList[i].addListener("click", () => {
-					infowindows[i].open(map, markerList[i]);
-					});
-	        }*/
-
-	    }
-    </script> 
-    <!-- Official one -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcr2BiFZKlhLnT5_RRbgYTfSEJrK_muPk&callback=initMap" async> </script> 
-    <!-- Developer one -->
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrWgl_J69_F0ng9VPcptJt9bjufMWedaI&callback=initMap" async> </script> -->
-
-
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="./main.css" type="text/css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/568a2adcad.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-	<header>
-	<nav class="navbar navbar-expand-md">
-	  <a class="navbar-brand" href="./index.html"> Arturo de Giorgi</a>
-	  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-	  <span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse" id="main-navigation">
-	    <ul class="navbar-nav">
-	    	<li class="nav-item">
-	     		<a class="nav-link" href="./index.html">Home</a>
-	    	</li>
-	    	<li class="nav-item">
-	    		<a class="nav-link" href="./cv.html">CV</a>
-	    	</li>
-	    	<li class="nav-item">
-                <a class="nav-link" href="./research_interests.html">Research Interests</a>
-            </li>
-	    	<li class="nav-item">
-	    		<a class="nav-link" href="./publications.html">Publications</a>
-	    	</li>
-	    	<li class="nav-item">
-	    		<a class="nav-link" href="./talks.html">Talks and Conferences</a>
-	    	</li>
-	    	<li class="nav-item">
-	    		<a class="nav-link" href="./posters.html">Posters</a>
-	    	</li>
-	    	<li class="nav-item">
-	    		<a class="nav-link" href="./hobbies.html">Non-Scientific Activities</a>
-	    	</li>
-	    	<!--<li class="nav-item">
-	    		<a class="nav-link" href="./didactics.html">Didactics</a>
-	    	</li> -->
-	    	<!--<li class="nav-item">
-	    		<a class="nav-link" href="./contact.php">Contact</a>
-	    	</li>-->
-	    </ul>
-	  </div>
-	</nav>
+	<header class="site-header">
+		<nav class="nav">
+			<a class="nav-brand" href="./index.html">Arturo de Giorgi</a>
+			<div class="nav-right">
+				<ul class="nav-links">
+					<li><a class="active" href="./index.html">Home</a></li>
+					<li><a href="./cv.html">CV</a></li>
+					<li><a href="./research_interests.html">Research Interests</a></li>
+					<li><a href="./publications.html">Publications</a></li>
+					<li><a href="./talks.html">Talks and Conferences</a></li>
+					<li><a href="./posters.html">Posters</a></li>
+					<li><a href="./hobbies.html">Non-Scientific Activities</a></li>
+				</ul>
+				<button class="theme-toggle" type="button" aria-label="Toggle dark mode">🌙</button>
+				<button class="nav-toggle" type="button" aria-label="Toggle navigation">
+					<span></span><span></span><span></span>
+				</button>
+			</div>
+		</nav>
 	</header>
 
-	<main class="page-header header container-fluid">
-			<div class="description" style="margin-top: 0px;">
-	  			<h1>Home</h1>
+	<main class="container">
+		<section class="hero">
+			<img class="hero-photo" src="./Images/deGiorgi_web.jpg" alt="Arturo de Giorgi">
+			<div>
+				<h1 class="hero-name">Arturo de Giorgi</h1>
+				<p class="hero-role">Postdoctoral Research Associate, IPPP · Durham University</p>
+				<ul class="chip-list">
+					<li><a href="mailto:arturo.de-giorgi@durham.ac.uk"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a></li>
+					<li><a href="https://www.linkedin.com/in/arturo-de-giorgi-8a6711121/" target="_blank" rel="noopener"><i class="fab fa-linkedin-in" aria-hidden="true"></i> LinkedIn</a></li>
+					<li><a href="https://inspirehep.net/authors/1838021" target="_blank" rel="noopener"><i class="fas fa-seedling" aria-hidden="true"></i> INSPIRE</a></li>
+					<li><a href="https://orcid.org/0000-0002-9260-5466" target="_blank" rel="noopener me"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="" style="width:1em;vertical-align:-1px;"> ORCID</a></li>
+					<li><a href="https://www.webofscience.com/wos/author/record/JDW-8706-2023" target="_blank" rel="noopener">Web of Science</a></li>
+					<li><a href="https://scholar.google.com/citations?user=iUJl0fgAAAAJ&hl=it&oi=ao" target="_blank" rel="noopener"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a></li>
+				</ul>
+				<a class="btn" href="./cv.html">View full CV</a>
+				<a class="btn btn-outline" href="./Files/CV_deGiorgi.pdf" target="_blank" rel="noopener" style="margin-left:10px;">Download PDF</a>
 			</div>
-			<div class="row" style="margin-top: -30px;">
-				<div class="col-lg-3 col-md-3 col-sm-12" id="about-info-white">
-					<figure id="profile-image">
-						<img  src="./Images/deGiorgi_web.jpeg" style="height: 70%; width:70%;   border-radius: 50%;" alt="Arturo de Giorgi">
-					</figure>
-                    <br>
-                    <hr class="hr_style">
-                        <h5>Ph.D.</h5>
-                        <img  src="./Images/ift_logo.png"  alt="IFT Logo" style="margin-left:8%; height: 8em; width:16em;">
-                    <hr class="hr_style">
-					<ul id="about-external">
-						<li><i class="fas fa-envelope" aria-hidden="true" style=";margin-right:.2em;"></i> <a class="info-link" href="mailto:arturo.degiorgi@uam.es">Email</a></li>
-						<li><i class="fab fa-linkedin-in" aria-hidden="true" style="margin-right:.32em;"></i> <a class="info-link" href="https://www.linkedin.com/in/arturo-de-giorgi-8a6711121/">Linkedin</a></li>
-						<li><i class="fas fa-seedling" aria-hidden="true" style=";margin-right:.2em;"></i> <a class="info-link" href="https://inspirehep.net/authors/1838021">INSPIRE</a></li>
-						<li><!--<div itemscope itemtype="https://schema.org/Person">--><a itemprop="sameAs"class="info-link" content="https://orcid.org/0000-0002-9260-5466" href="https://orcid.org/0000-0002-9260-5466" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.4em;" alt="ORCID iD icon">ORCID</a><!--</div>--></li>
-                        <li><img  src="./Images/Artupia_logo.png" style="height: 1em; width:1em; margin-right: .2em;" alt="Artupia Logo" > <a href="https://artupia.com" class="info-link" target="_blank">Artupia</a></li>
-                        <li><i class="fab fa fa-github" aria-hidden="true" style=";margin-right:.2em;"></i> <a href="https://github.com/DegCo" class="info-link" target="_blank">Github</a></li>
-                    </ul>
-                    <hr class="hr_style">
-	    		</div>
-	    		<div class="col-lg-9 col-md-9 col-sm-12">
-						<div class="square-section-text">
-							<div class="text-description">
-								<h4>About Me</h4>
-								<p>
-									My name is Arturo. I was born in Parma, a small city in northern Italy. During high school, I developed a lively passion for physics. I was fascinated by the concept of "energy" and for this reason, in the fourth year, I successfully took the entrance test at the Politecnico di Milano to enter Energetic Engineering. However, in the last year of high school I was introduced to special relativity, which, by connecting mass and energy, destroyed all my beliefs and opened the horizons to a new world. So I decided to study Physics.
-								</p>
-								<p>
-									My choice led me to leave my city and start traveling around Europe. Not only did my knowledge of physics increase, but I also met wonderful people who along with their culture enriched me as a person as well.
-								</p>
-								<p>	
-									There are still so many questions I would like to have an answer to and I am willing to face all of them in my career, starting from my next adventure: the PhD.
-								</p>
-							</div>
-							<!-- Maps Locations -->
-<!--						<br>
-							<div class="text-description">
-								<h4>My Journey</h4>
-								<p>Here the milestones of my journey across the world.</p>
-							    <div id="map"></div>
-							</div>  -->
-						</div>
+		</section>
+
+		<section class="section">
+			<h2 class="section-title">Latest</h2>
+			<div class="news-strip">
+				<!-- AUTO-NEWS-START -->
+				<!-- AUTO-NEWS-END -->
+				<div class="news-item">
+					<p class="news-date">Jul 2026</p>
+					<p class="news-text">Gave an invited seminar at IFT Madrid: <em>The Hunt for Multiple Axions</em>.</p>
+				</div>
+				<div class="news-item">
+					<p class="news-date">Jun 2026</p>
+					<p class="news-text">Plenary talk at ALPs Across Scales, MITP Mainz: <em>Hunting Multiple Axions</em>.</p>
+				</div>
+				<div class="news-item">
+					<p class="news-date">Jun 2026</p>
+					<p class="news-text">New paper: <a href="https://arxiv.org/abs/2606.02689" target="_blank" rel="noopener">Thermal Metastable Strings in One-Scale Models and Gravitational Waves</a>.</p>
+				</div>
+				<div class="news-item">
+					<p class="news-date">May 2026</p>
+					<p class="news-text">New paper: <a href="https://arxiv.org/abs/2605.18944" target="_blank" rel="noopener">The Majoron Cosmological Window: Dark Matter and Thermal Leptogenesis</a>.</p>
+				</div>
+				<div class="news-item">
+					<p class="news-date">Mar 2026</p>
+					<p class="news-text">Started as Guest Editor for <em>Physics Letters B</em>.</p>
+				</div>
+				<div class="news-item">
+					<p class="news-date">Feb 2026</p>
+					<p class="news-text">New paper: <a href="https://arxiv.org/abs/2602.06112" target="_blank" rel="noopener">Scalar Tsunamis from Black Hole Formation</a>.</p>
 				</div>
 			</div>
+		</section>
+
+		<section class="section">
+			<h2 class="section-title">About Me</h2>
+			<div class="card prose">
+				<p>
+					My name is Arturo. I was born in Parma, a small city in northern Italy. During high school I developed a lasting passion for physics — I was fascinated by the idea of "energy", and it was special relativity, connecting mass and energy, that convinced me to study physics rather than engineering.
+				</p>
+				<p>
+					That choice took me across Europe: a B.Sc. in Padova, an M.Sc. at LMU Munich, and a Ph.D. at the Instituto de Física Teórica (UAM/CSIC) in Madrid, along with research stays at ETH Zürich, Harvard University, Heidelberg, and KEK in Tsukuba, Japan. I am now a Postdoctoral Research Associate at the Institute for Particle Physics Phenomenology (IPPP), Durham University, working on the phenomenology of physics beyond the Standard Model.
+				</p>
+				<p>
+					My research centres on extra-dimensional scenarios and the Kaluza-Klein gravitational sector — its spin-2, vector, and scalar towers — and how it connects to dark matter, axions, and neutrinos across collider, astrophysical, and cosmological scales. In 2025 this work was recognised with the Italian Physical Society's "Giuliano Preparata" Prize in Theoretical Physics. There are still many questions I would like answers to, and I look forward to chasing them.
+				</p>
+			</div>
+		</section>
+
+		<section class="section">
+			<h2 class="section-title">My Journey</h2>
+			<p class="page-subtitle" style="margin-bottom:24px;">Places along the way, most recent first — and a footprint of where the talks, seminars, and research stays have taken me.</p>
+			<div class="journey-grid">
+				<ol class="journey">
+					<li class="journey-item current">
+						<span class="journey-flag" title="United Kingdom">🇬🇧</span>
+						<div class="journey-body">
+							<p class="journey-date">2024 – Today</p>
+							<p class="journey-place">Durham, United Kingdom <span class="journey-current-badge">Current</span></p>
+							<p class="journey-desc">Postdoctoral Research Associate, IPPP, Durham University.</p>
+						</div>
+					</li>
+					<li class="journey-item">
+						<span class="journey-flag" title="Japan">🇯🇵</span>
+						<div class="journey-body">
+							<p class="journey-date">2025</p>
+							<p class="journey-place">Tsukuba, Japan</p>
+							<p class="journey-desc">QUPIP Visitor, KEK.</p>
+						</div>
+					</li>
+					<li class="journey-item">
+						<span class="journey-flag" title="Germany">🇩🇪</span>
+						<div class="journey-body">
+							<p class="journey-date">2023</p>
+							<p class="journey-place">Heidelberg, Germany</p>
+							<p class="journey-desc">Visiting Researcher, Universität Heidelberg.</p>
+						</div>
+					</li>
+					<li class="journey-item">
+						<span class="journey-flag" title="United States">🇺🇸</span>
+						<div class="journey-body">
+							<p class="journey-date">2023</p>
+							<p class="journey-place">Boston, USA</p>
+							<p class="journey-desc">Visiting Researcher, Harvard University.</p>
+						</div>
+					</li>
+					<li class="journey-item">
+						<span class="journey-flag" title="Spain">🇪🇸</span>
+						<div class="journey-body">
+							<p class="journey-date">2021 – 2024</p>
+							<p class="journey-place">Madrid, Spain</p>
+							<p class="journey-desc">Ph.D. in Physics, IFT UAM/CSIC.</p>
+						</div>
+					</li>
+					<li class="journey-item">
+						<span class="journey-flag" title="Switzerland">🇨🇭</span>
+						<div class="journey-body">
+							<p class="journey-date">2021</p>
+							<p class="journey-place">Zurich, Switzerland</p>
+							<p class="journey-desc">Research Internship, ETH Zürich.</p>
+						</div>
+					</li>
+					<li class="journey-item">
+						<span class="journey-flag" title="Germany">🇩🇪</span>
+						<div class="journey-body">
+							<p class="journey-date">2018 – 2020</p>
+							<p class="journey-place">Munich, Germany</p>
+							<p class="journey-desc">M.Sc. in Physics, LMU Munich · Student Research Assistant, Max Planck Institute for Physics.</p>
+						</div>
+					</li>
+					<li class="journey-item">
+						<span class="journey-flag" title="Italy">🇮🇹</span>
+						<div class="journey-body">
+							<p class="journey-date">2015 – 2018</p>
+							<p class="journey-place">Padova, Italy</p>
+							<p class="journey-desc">B.Sc. in Physics, University of Padova.</p>
+						</div>
+					</li>
+					<li class="journey-item">
+						<span class="journey-flag" title="Italy">🇮🇹</span>
+						<div class="journey-body">
+							<p class="journey-date">1996</p>
+							<p class="journey-place">Parma, Italy</p>
+							<p class="journey-desc">Home — where it all started.</p>
+						</div>
+					</li>
+				</ol>
+
+				<div class="bubble-panel">
+					<h3>Footprint by country</h3>
+					<p class="bubble-caption">Talks, seminars, and research stays since 2018 — bubble area is proportional to count.</p>
+					<div class="bubble-cloud">
+						<div class="bubble" style="width:120px;height:120px;background:#9c7a1f;" title="Germany — 11 (8 talks/seminars + M.Sc. Munich + Max Planck stay + Heidelberg stay)">
+							<span class="bubble-flag">🇩🇪</span><span class="bubble-count">11</span>
+						</div>
+						<div class="bubble" style="width:91px;height:91px;background:#8f1f2e;" title="Switzerland — 4 (3 talks/seminars + ETH internship)">
+							<span class="bubble-flag">🇨🇭</span><span class="bubble-count">4</span>
+						</div>
+						<div class="bubble" style="width:91px;height:91px;background:#b8492b;" title="Japan — 4 (3 talks/seminars + KEK/QUPIP stay)">
+							<span class="bubble-flag">🇯🇵</span><span class="bubble-count">4</span>
+						</div>
+						<div class="bubble" style="width:85px;height:85px;background:#2f6b3f;" title="Italy — 3 (2 talks + B.Sc. Padova)">
+							<span class="bubble-flag">🇮🇹</span><span class="bubble-count">3</span>
+						</div>
+						<div class="bubble" style="width:85px;height:85px;background:#1f3f66;" title="United States — 3 (2 talks/seminars + Harvard visit)">
+							<span class="bubble-flag">🇺🇸</span><span class="bubble-count">3</span>
+						</div>
+						<div class="bubble" style="width:85px;height:85px;background:#a8531f;" title="Spain — 3 (2 seminars + Ph.D. Madrid)">
+							<span class="bubble-flag">🇪🇸</span><span class="bubble-count">3</span>
+						</div>
+						<div class="bubble" style="width:78px;height:78px;background:#33396b;" title="United Kingdom — 2 (2 talks, both at Durham)">
+							<span class="bubble-flag">🇬🇧</span><span class="bubble-count">2</span>
+						</div>
+						<div class="bubble" style="width:68px;height:68px;background:#7a2333;" title="China — 1 (seminar)">
+							<span class="bubble-flag">🇨🇳</span><span class="bubble-count">1</span>
+						</div>
+						<div class="bubble" style="width:68px;height:68px;background:#355f95;" title="France — 1 (talk)">
+							<span class="bubble-flag">🇫🇷</span><span class="bubble-count">1</span>
+						</div>
+						<div class="bubble" style="width:68px;height:68px;background:#3d5270;" title="Russia — 1 (talk)">
+							<span class="bubble-flag">🇷🇺</span><span class="bubble-count">1</span>
+						</div>
+						<div class="bubble" style="width:68px;height:68px;background:#9c3b3b;" title="Poland — 1 (talk)">
+							<span class="bubble-flag">🇵🇱</span><span class="bubble-count">1</span>
+						</div>
+					</div>
+					<p class="bubble-footnote">Counts combine plenary talks, parallel talks, invited seminars, degrees, and research stays — see <a href="./talks.html">Talks and Conferences</a> for the full list.</p>
+				</div>
+			</div>
+		</section>
+
+		<section class="section">
+			<h2 class="section-title">Collaborators</h2>
+			<p class="page-subtitle" style="margin-bottom:20px;">25 co-authors across 21 papers — node size and line weight track how many papers we've written together.</p>
+			<div class="card" id="collab-graph"></div>
+		</section>
 	</main>
 
-		
-	<footer class="page-footer">
-	  	<div class="container">
-	    	<div class="row">
-	    		<div class="col-lg-8 col-md-8 col-sm-12">
-	    			<h6 class="text-uppercase font-weight-bold">Additional Information</h6>
-	    			<p>This website was created as online and more general digital CV. <br> Please report any bugs at this <a style="color: #ccc;" href="mailto:arturo.degiorgi@uam.es" alt="Email"><b>address</b></a>.</p>
-	    		</div>
-	    		<div class="col-lg-4 col-md-4 col-sm-12">
-	    			<h6 class="text-uppercase font-weight-bold">Contact</h6>
-	    			<p>
-	    			<br/>arturo.degiorgi@uam.es
-	    			</p>
-	    		</div>
-	 		</div>
-    	  	<div class="footer-copyright text-center">
-                © 2022 Copyright: Deg&Co
-                <br>
-                Last Update: 12.02.2022
-            </div>
-        </div>
+	<footer class="site-footer">
+		<div class="container">
+			<div class="footer-grid">
+				<div>
+					<h6>Additional Information</h6>
+					<p>This website serves as an online, more general digital CV.<br>Please report any bugs to this <a href="mailto:arturo.de-giorgi@durham.ac.uk">address</a>.</p>
+				</div>
+				<div>
+					<h6>Contact</h6>
+					<p>arturo.de-giorgi@durham.ac.uk</p>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				© 2026 Arturo de Giorgi · Last update: July 2026
+			</div>
+		</div>
 	</footer>
 
-<!-- Add Jquey & Co -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="./script.js"></script>
 </body>
 </html>

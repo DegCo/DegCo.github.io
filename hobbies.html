@@ -1,190 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
+	<script>(function(){try{var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width = device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Non-Scientific Activities — Arturo de Giorgi</title>
 
-	<title>Non-Scientific Interests & Hobbies </title>
-
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link href="./style.css" type="text/css" rel="stylesheet">
-	<!-- Add fontawesome -->
-    <script src="https://kit.fontawesome.com/568a2adcad.js" crossorigin="anonymous"></script>
-
-    <!-- Include Maps for Locations -->
-    <!--
-	<script
-      	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_K9ZPQGr-Z5nQJw5hQ8V39QrceyaOLtA&callback=initMap&libraries=&v=weekly"
-     	 defer></script>
-    <script>
-      // Initialize and add the map
-      function initMap() {
-        // The location of Uluru
-        const munich = { lat: 48.13628, lng: 11.58284};
-        const padova = { lat: 45.4081, lng: 11.8799};
-        const parma = { lat: 44.80171, lng: 10.32797};
-
-        var locations = [munich, padova, parma];
-        var colors =["blue", "green", "red"];
-        // The map, centered at Uluru
-        const map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 4,
-          center: munich,
-        });
-        // The marker, positioned at Uluru
-        var marker; 
-        for(i = 0; i < locations.length; i++){
-        	marker= new google.maps.Marker({
-          	position: locations[i],
-          	icon: {url: "http://maps.google.com/mapfiles/ms/icons/"+colors[i]+"-dot.png"},
-          	map: map,
-        	});
-        }
-
-      }
-    </script> -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="./main.css" type="text/css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/568a2adcad.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-	<header>
-	<nav class="navbar navbar-expand-md">
-	  <a class="navbar-brand" href="./index.html"> Arturo de Giorgi</a>
-	  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-	  <span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse" id="main-navigation">
-	    <ul class="navbar-nav">
-	    	<li class="nav-item">
-	     		<a class="nav-link" href="./index.html">Home</a>
-	    	</li>
-	    	<li class="nav-item">
-	    		<a class="nav-link" href="./cv.html">CV</a>
-	    	</li>
-	    	<li class="nav-item">
-                <a class="nav-link" href="./research_interests.html">Research Interests</a>
-            </li>
-	    	<li class="nav-item">
-	    		<a class="nav-link" href="./publications.html">Publications</a>
-	    	</li>
-	    	<li class="nav-item">
-	    		<a class="nav-link" href="./talks.html">Talks and Conferences</a>
-	    	</li>
-	    	<li class="nav-item">
-	    		<a class="nav-link" href="./posters.html">Posters</a>
-	    	</li>
-	    	<li class="nav-item">
-	    		<a class="nav-link" href="./hobbies.html">Non-Scientific Activities</a>
-	    	</li>
-	    	<!--<li class="nav-item">
-	    		<a class="nav-link" href="./didactics.html">Didactics</a>
-	    	</li> -->
-	    	<!--<li class="nav-item">
-	    		<a class="nav-link" href="./contact.php">Contact</a>
-	    	</li>-->
-	    </ul>
-	  </div>
-	</nav>
+	<header class="site-header">
+		<nav class="nav">
+			<a class="nav-brand" href="./index.html">Arturo de Giorgi</a>
+			<div class="nav-right">
+				<ul class="nav-links">
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="./cv.html">CV</a></li>
+					<li><a href="./research_interests.html">Research Interests</a></li>
+					<li><a href="./publications.html">Publications</a></li>
+					<li><a href="./talks.html">Talks and Conferences</a></li>
+					<li><a href="./posters.html">Posters</a></li>
+					<li><a class="active" href="./hobbies.html">Non-Scientific Activities</a></li>
+				</ul>
+				<button class="theme-toggle" type="button" aria-label="Toggle dark mode">🌙</button>
+				<button class="nav-toggle" type="button" aria-label="Toggle navigation">
+					<span></span><span></span><span></span>
+				</button>
+			</div>
+		</nav>
 	</header>
 
-	<main class="page-header header container-fluid">
-			<div class="description" >
-				<br>
-	  			<h1>Non-Scientific Interests & Activities</h1>
-	  			<p> Here you can find a list of my non-scientific interests and activities.
-					<br>
-	 			<b>-- TO BE UPDATED: see CV --</b>
-	  			</p>
-			</div>
-			<div class="row" >
-				<div class="col-lg-3 col-md-3 col-sm-12" id="about-info-white">
-					<figure id="profile-image">
-						<img  src="./Images/deGiorgi_web.jpeg" style="height: 70%; width:70%;   border-radius: 50%;" alt="Arturo de Giorgi">
-					</figure>
-                    <br>
-                    <hr class="hr_style">
-                    <h5>Ph.D.</h5>
-                    <img  src="./Images/ift_logo.png"  alt="IFT Logo" style="margin-left:8%; height: 8em; width:16em;">
-                    <hr class="hr_style">
-					<ul id="about-external">
-						<li><i class="fas fa-envelope" aria-hidden="true" style=";margin-right:.2em;"></i> <a class="info-link" href="mailto:arturo.degiorgi@uam.es">Email</a></li>
-						<li><i class="fab fa-linkedin-in" aria-hidden="true" style="margin-right:.32em;"></i> <a class="info-link" href="https://www.linkedin.com/in/arturo-de-giorgi-8a6711121/">Linkedin</a></li>
-						<li><i class="fas fa-seedling" aria-hidden="true" style=";margin-right:.2em;"></i> <a class="info-link" href="https://inspirehep.net/authors/1838021">INSPIRE</a></li>
-						<li><!--<div itemscope itemtype="https://schema.org/Person">--><a itemprop="sameAs"class="info-link" content="https://orcid.org/0000-0002-9260-5466" href="https://orcid.org/0000-0002-9260-5466" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.4em;" alt="ORCID iD icon">ORCID</a><!--</div>--></li>
-                        <li><img  src="./Images/Artupia_logo.png" style="height: 1em; width:1em; margin-right: .2em;" alt="Artupia Logo" > <a href="https://artupia.com" class="info-link" target="_blank">Artupia</a></li>
-                        <li><i class="fab fa fa-github" aria-hidden="true" style=";margin-right:.2em;"></i> <a href="https://github.com/DegCo" class="info-link" target="_blank">Github</a></li>
-                    </ul>
-					<hr class="hr_style">
-	    		</div>
-	    		<div class="col-lg-9 col-md-9 col-sm-12">
-	    			<div id="scrollable">
-							<div class="square-section">
-								<h4>Organizations </h4>
-								<div class="row">
-	    							<div class="logos col-lg-3 col-md-3 col-sm-12">
-	    								<h6>July 2014 - October 2021</h6>
-	    								<img  src="./Images/Artupia_Full.png" class="logo-image"  alt="Artupia Logo">
-	    							</div>
-	    							<div class="col-lg-9 col-md-9 col-sm-12">
-	    								<h4> <b>Artupia </b> </h4>
-	    								<h6><b>Founder</b> and <b>CAO</b></h6>
-	    								<p class="uni-info">
-	    									In 2014 I started working with two dear friends at an art Startup, Artupia,
-	    									on the algorithms side as CAO. All this has led to solid teamwork, to
-											learn new tools never used before for image creation and social management, to learn how to code in different programming styles, and to learn the basics of marketing and design.
-	    								</p>
-	    							</div>
-    							</div>
-    							<br>
-    							<div class="row">
-	    							<div class="logos col-lg-3 col-md-3 col-sm-12">
-	    								<h6> October 2012 - July 2015</h6>
-	    								<img  src="./Images/EuropeanClub.jpg" class="logo-image" style="width: 80%; height:90%;" alt="Europeanclubeuropeo Logo">
-	    							</div>
-	    							<div class="col-lg-9 col-md-9 col-sm-12">
-	    								<h6> <b>Member</b> and <b>Events Coordinator</b> of the Highschool Club <b>Europeanclubeuropeo</b> </h6>
-	    								<p class="uni-info">
-	    									I have always been a great supporter of the European Union, convinced that states can only achieve lasting peace and economic prosperity through cooperation. 
-	    									For this reason, I joined the Europeanclubeuropeo, a highschool club dedicated to the dissemination in various forms of the culture and values of the European Union.
-	    								</p>
-	    							</div>
-    							</div>
-    							<br>
+	<main class="container">
+		<h1 class="page-title">Non-Scientific Activities</h1>
+		<p class="page-subtitle">Community service, mentorship, and other things I care about outside of physics.</p>
+
+		<div class="cv-layout">
+			<aside class="cv-sidebar">
+				<div class="card">
+					<img class="cv-sidebar-photo" src="./Images/deGiorgi_web.jpg" alt="Arturo de Giorgi">
+					<h3>Arturo de Giorgi</h3>
+					<p class="role">Postdoctoral Research Associate<br>IPPP, Durham University</p>
+					<ul class="cv-links">
+						<li><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:arturo.de-giorgi@durham.ac.uk">Email</a></li>
+						<li><i class="fab fa-linkedin-in" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/arturo-de-giorgi-8a6711121/" target="_blank" rel="noopener">LinkedIn</a></li>
+						<li><i class="fas fa-seedling" aria-hidden="true"></i> <a href="https://inspirehep.net/authors/1838021" target="_blank" rel="noopener">INSPIRE</a></li>
+						<li><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="" style="width:1em;vertical-align:-1px;"> <a href="https://orcid.org/0000-0002-9260-5466" target="_blank" rel="noopener me">ORCID</a></li>
+						<li><i class="fas fa-graduation-cap" aria-hidden="true"></i> <a href="https://scholar.google.com/citations?user=iUJl0fgAAAAJ&hl=it&oi=ao" target="_blank" rel="noopener">Google Scholar</a></li>
+					</ul>
+					<a class="btn" href="./cv.html" style="width:100%;">View full CV</a>
+				</div>
+			</aside>
+
+			<div>
+				<section class="section">
+					<h2 class="section-title">Community &amp; Volunteering</h2>
+					<div class="card">
+						<div class="entry">
+							<div class="entry-date">May 2023 – Today</div>
+							<div>
+								<p class="entry-title">Member, Rotaract Madrid Serrano</p>
+								<p class="entry-meta">A community service organisation focused on international service projects.</p>
+							</div>
+						</div>
+						<div class="entry">
+							<div class="entry-date">May 2023 – Today</div>
+							<div>
+								<p class="entry-title">Mentor, Lead the Future</p>
+								<p class="entry-meta">A non-profit STEM mentorship organisation built on the spirit of "Give Back".</p>
+							</div>
+						</div>
+						<div class="entry">
+							<div class="entry-date">Sep 2022 – May 2023</div>
+							<div>
+								<p class="entry-title">Member, IFT Equity, Diversity and Inclusion Committee</p>
 							</div>
 						</div>
 					</div>
+				</section>
+
+				<section class="section">
+					<h2 class="section-title">Ventures &amp; Clubs</h2>
+					<div class="card">
+						<div class="entry">
+							<div class="entry-date">2014 – 2021</div>
+							<div>
+								<p class="entry-title">Founder &amp; CAO, Artupia</p>
+								<p class="entry-org"><a href="https://artupia.com" target="_blank" rel="noopener">artupia.com</a></p>
+								<p class="entry-meta">In 2014 I started an art-tech startup with two close friends, working on the algorithmic side as CAO — building a solid team, learning new tools for image generation and social management, coding in different styles, and picking up the basics of marketing and design.</p>
+							</div>
+						</div>
+						<div class="entry">
+							<div class="entry-date">2012 – 2015</div>
+							<div>
+								<p class="entry-title">Member &amp; Events Coordinator, Europeanclubeuropeo</p>
+								<p class="entry-meta">I've always supported the European Union, convinced that lasting peace and economic prosperity between states come through cooperation. Europeanclubeuropeo was a high-school club dedicated to spreading the culture and values of the EU.</p>
+							</div>
+						</div>
+					</div>
+				</section>
 			</div>
 		</div>
-		</div> 
-
 	</main>
 
-		
-	<footer class="page-footer">
-	  	<div class="container">
-	    	<div class="row">
-	    		<div class="col-lg-8 col-md-8 col-sm-12">
-	    			<h6 class="text-uppercase font-weight-bold">Additional Information</h6>
-	    			<p>This website was created as online and more general digital CV. <br> Please report any bugs at this <a style="color: #ccc;" href="mailto:arturo.degiorgi@uam.es" alt="Email"><b>address</b></a>.</p>
-	    		</div>
-	    		<div class="col-lg-4 col-md-4 col-sm-12">
-	    			<h6 class="text-uppercase font-weight-bold">Contact</h6>
-	    			<p>
-	    			<br/>arturo.degiorgi@uam.es
-	    			</p>
-	    		</div>
-	 		</div>
-    	  	<div class="footer-copyright text-center">
-                © 2022 Copyright: Deg&Co
-                <br>
-                Last Update: 12.02.2022
-            </div>
-        </div>
+	<footer class="site-footer">
+		<div class="container">
+			<div class="footer-grid">
+				<div>
+					<h6>Additional Information</h6>
+					<p>This website serves as an online, more general digital CV.<br>Please report any bugs to this <a href="mailto:arturo.de-giorgi@durham.ac.uk">address</a>.</p>
+				</div>
+				<div>
+					<h6>Contact</h6>
+					<p>arturo.de-giorgi@durham.ac.uk</p>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				© 2026 Arturo de Giorgi · Last update: July 2026
+			</div>
+		</div>
 	</footer>
 
-<!-- Add Jquey & Co -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="./script.js"></script>
 </body>
 </html>

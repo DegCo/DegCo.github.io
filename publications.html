@@ -1,345 +1,283 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
+	<script>(function(){try{var t=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width = device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Publications — Arturo de Giorgi</title>
 
-	<title>Publications </title>
-
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link href="./style.css" type="text/css" rel="stylesheet">
-	<!-- Add fontawesome -->
-    <script src="https://kit.fontawesome.com/568a2adcad.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="./main.css" type="text/css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/568a2adcad.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-	<header>
-	<nav class="navbar navbar-expand-md">
-	  <a class="navbar-brand" href="./index.html">Arturo de Giorgi</a>
-	  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-	  <span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse" id="main-navigation">
-	    <ul class="navbar-nav">
-	    	<li class="nav-item">
-	     		<a class="nav-link" href="./index.html">Home</a>
-	    	</li>
-	    	<li class="nav-item">
-	    		<a class="nav-link" href="./cv.html">CV</a>
-	    	</li>
-	    	<li class="nav-item">
-                <a class="nav-link" href="./research_interests.html">Research Interests</a>
-            </li>
-	    	<li class="nav-item">
-	    		<a class="nav-link" href="./publications.html">Publications</a>
-	    	</li>
-	    	<li class="nav-item">
-	    		<a class="nav-link" href="./talks.html">Talks and Conferences</a>
-	    	</li>
-	    	<li class="nav-item">
-	    		<a class="nav-link" href="./posters.html">Posters</a>
-	    	</li>
-	    	<li class="nav-item">
-                <a class="nav-link" href="./hobbies.html">Non-Scientific Activities</a>
-            </li>
-	    	<!--<li class="nav-item">
-	    		<a class="nav-link" href="./didactics.html">Didactics</a>
-	    	</li>-->
-	    	<!--<li class="nav-item">
-	    		<a class="nav-link" href="./contact.php">Contact</a>
-	    	</li>-->
-	    </ul>
-	  </div>
-	</nav>
+	<header class="site-header">
+		<nav class="nav">
+			<a class="nav-brand" href="./index.html">Arturo de Giorgi</a>
+			<div class="nav-right">
+				<ul class="nav-links">
+					<li><a href="./index.html">Home</a></li>
+					<li><a href="./cv.html">CV</a></li>
+					<li><a href="./research_interests.html">Research Interests</a></li>
+					<li><a class="active" href="./publications.html">Publications</a></li>
+					<li><a href="./talks.html">Talks and Conferences</a></li>
+					<li><a href="./posters.html">Posters</a></li>
+					<li><a href="./hobbies.html">Non-Scientific Activities</a></li>
+				</ul>
+				<button class="theme-toggle" type="button" aria-label="Toggle dark mode">🌙</button>
+				<button class="nav-toggle" type="button" aria-label="Toggle navigation">
+					<span></span><span></span><span></span>
+				</button>
+			</div>
+		</nav>
 	</header>
 
-	<main class="page-header header container-fluid">
-		<div class="description">
-	  		<h1>Publications</h1>
-	 		<p>On this page you can find my list of publications.</p>
+	<main class="container">
+		<h1 class="page-title">Publications</h1>
+		<p class="page-subtitle">21 papers in peer-reviewed journals, 4 community white papers, and 3 proceedings — see also my <a href="https://inspirehep.net/authors/1838021" target="_blank" rel="noopener">INSPIRE profile</a> for citation metrics.</p>
+
+		<div class="cv-layout">
+			<aside class="cv-sidebar">
+				<div class="card">
+					<img class="cv-sidebar-photo" src="./Images/deGiorgi_web.jpg" alt="Arturo de Giorgi">
+					<h3>Arturo de Giorgi</h3>
+					<p class="role">Postdoctoral Research Associate<br>IPPP, Durham University</p>
+					<ul class="cv-links">
+						<li><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:arturo.de-giorgi@durham.ac.uk">Email</a></li>
+						<li><i class="fab fa-linkedin-in" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/arturo-de-giorgi-8a6711121/" target="_blank" rel="noopener">LinkedIn</a></li>
+						<li><i class="fas fa-seedling" aria-hidden="true"></i> <a href="https://inspirehep.net/authors/1838021" target="_blank" rel="noopener">INSPIRE</a></li>
+						<li><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" alt="" style="width:1em;vertical-align:-1px;"> <a href="https://orcid.org/0000-0002-9260-5466" target="_blank" rel="noopener me">ORCID</a></li>
+						<li><i class="fas fa-graduation-cap" aria-hidden="true"></i> <a href="https://scholar.google.com/citations?user=iUJl0fgAAAAJ&hl=it&oi=ao" target="_blank" rel="noopener">Google Scholar</a></li>
+					</ul>
+					<a class="btn" href="./cv.html" style="width:100%;">View full CV</a>
+				</div>
+			</aside>
+
+			<div>
+				<section class="section">
+					<h2 class="section-title">Scientific Publications</h2>
+					<div class="card">
+						<ol class="pub-list" reversed>
+							<!-- AUTO-PUBLICATIONS-START -->
+							<!-- AUTO-PUBLICATIONS-END -->
+							<li class="pub-item">
+								<p class="pub-title"><a href="https://arxiv.org/abs/2606.02689" target="_blank" rel="noopener">Thermal Metastable Strings in One-Scale Models and Gravitational Waves</a></p>
+								<p class="pub-authors"><b>A. de Giorgi</b>, J. Ingoldby, V. V. Khoze, J. Turner</p>
+								<p class="pub-meta">e-Print: <a href="https://arxiv.org/abs/2606.02689" target="_blank" rel="noopener">2606.02689</a> [hep-ph]</p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title"><a href="https://arxiv.org/abs/2605.18944" target="_blank" rel="noopener">The Majoron Cosmological Window: Dark Matter and Thermal Leptogenesis</a></p>
+								<p class="pub-authors"><b>A. de Giorgi</b>, D. Naredo-Tuero, X. Ponce Díaz</p>
+								<p class="pub-meta">e-Print: <a href="https://arxiv.org/abs/2605.18944" target="_blank" rel="noopener">2605.18944</a> [hep-ph]</p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title"><a href="https://arxiv.org/abs/2602.06112" target="_blank" rel="noopener">Scalar Tsunamis from Black Hole Formation</a></p>
+								<p class="pub-authors"><b>A. de Giorgi</b>, Y. G. del Castillo, J. Jaeckel</p>
+								<p class="pub-meta">e-Print: <a href="https://arxiv.org/abs/2602.06112" target="_blank" rel="noopener">2602.06112</a> [hep-ph]</p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title"><a href="https://arxiv.org/abs/2512.16837" target="_blank" rel="noopener">Multiple Axions in Laboratory Experiments</a></p>
+								<p class="pub-authors"><b>A. de Giorgi</b>, J. Jaeckel, S. Monath, V. Takhistov</p>
+								<p class="pub-meta">e-Print: <a href="https://arxiv.org/abs/2512.16837" target="_blank" rel="noopener">2512.16837</a> [hep-ph]</p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title"><a href="https://arxiv.org/abs/2512.13798" target="_blank" rel="noopener">Neutrino Constraints on Scalar-Tensor Gravity</a></p>
+								<p class="pub-authors"><b>A. de Giorgi</b>, I. M. Soler, S. Sevillano Muñoz</p>
+								<p class="pub-meta">e-Print: <a href="https://arxiv.org/abs/2512.13798" target="_blank" rel="noopener">2512.13798</a> [hep-ph]</p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title"><a href="https://arxiv.org/abs/2512.02101" target="_blank" rel="noopener">Do neutrinos dream in 5D? Towards a comprehensive extra-dimensional neutrino phenomenology</a></p>
+								<p class="pub-authors"><b>A. de Giorgi</b>, D. Pasari, J. Turner</p>
+								<p class="pub-meta">Published in: JHEP 05 (2026) 152 · e-Print: <a href="https://arxiv.org/abs/2512.02101" target="_blank" rel="noopener">2512.02101</a> [hep-ph]</p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title"><a href="https://arxiv.org/abs/2412.00179" target="_blank" rel="noopener">Extra-dimensional axion patterns</a></p>
+								<p class="pub-authors"><b>A. de Giorgi</b>, M. Ramos</p>
+								<p class="pub-meta">Published in: Phys. Rev. D 111 (2025) no.7, 075006 · e-Print: <a href="https://arxiv.org/abs/2412.00179" target="_blank" rel="noopener">2412.00179</a> [hep-ph]</p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title"><a href="https://arxiv.org/abs/2408.10296" target="_blank" rel="noopener">Star shearing season: transient signals in wave-like dark matter experiments from black hole formation</a></p>
+								<p class="pub-authors"><b>A. de Giorgi</b>, J. Jaeckel</p>
+								<p class="pub-meta">Published in: Eur. Phys. J. C 85 (2025) no.2, 155 · e-Print: <a href="https://arxiv.org/abs/2408.10296" target="_blank" rel="noopener">2408.10296</a> [hep-ph]</p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title"><a href="https://arxiv.org/abs/2407.14970" target="_blank" rel="noopener">ALPs and HNLs at LHC and muon colliders: Uncovering new couplings and signals</a></p>
+								<p class="pub-authors">M. B. Marcos, <b>A. de Giorgi</b>, L. Merlo, J.-L. Tastet</p>
+								<p class="pub-meta">Published in: SciPost Phys. 18 (2025) 084 · e-Print: <a href="https://arxiv.org/abs/2407.14970" target="_blank" rel="noopener">2407.14970</a> [hep-ph]</p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title"><a href="https://arxiv.org/abs/2402.14059" target="_blank" rel="noopener">Visible GeV ALP from TeV Vector-Like Leptons</a></p>
+								<p class="pub-authors"><b>A. de Giorgi</b>, M. F. Zamoro, L. Merlo</p>
+								<p class="pub-meta">Published in: Fortsch. Phys. 73 (2025) no.3, 2400165 · e-Print: <a href="https://arxiv.org/abs/2402.14059" target="_blank" rel="noopener">2402.14059</a> [hep-ph]</p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title"><a href="https://arxiv.org/abs/2311.01507" target="_blank" rel="noopener">Gravity-matter sum rules in models with a single extra-dimension</a></p>
+								<p class="pub-authors"><b>A. de Giorgi</b>, S. Vogl</p>
+								<p class="pub-meta">Published in: JHEP 05 (2024) 315 · e-Print: <a href="https://arxiv.org/abs/2311.01507" target="_blank" rel="noopener">2311.01507</a> [hep-ph]</p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title"><a href="https://arxiv.org/abs/2312.13417" target="_blank" rel="noopener">The minimal massive Majoron Seesaw Model</a></p>
+								<p class="pub-authors"><b>A. de Giorgi</b>, L. Merlo, X. Ponce Díaz, S. Rigolin</p>
+								<p class="pub-meta">Published in: JHEP 03 (2024) 094 · e-Print: <a href="https://arxiv.org/abs/2312.13417" target="_blank" rel="noopener">2312.13417</a> [hep-ph]</p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title"><a href="https://inspirehep.net/literature/2653352" target="_blank" rel="noopener">Flavour and Higgs physics in Z2-symmetric 2HD models near the decoupling limit</a></p>
+								<p class="pub-authors"><b>A. de Giorgi</b>, F. Koutroulis, L. Merlo, S. Pokorski</p>
+								<p class="pub-meta">Published in: Nucl. Phys. B 994 (2023) 116323 · e-Print: <a href="https://arxiv.org/abs/2304.10560" target="_blank" rel="noopener">2304.10560</a> [hep-ph]</p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title"><a href="https://inspirehep.net/literature/2617409" target="_blank" rel="noopener">Probing HNL-ALP couplings at colliders</a></p>
+								<p class="pub-authors"><b>A. de Giorgi</b>, L. Merlo, J.-L. Tastet</p>
+								<p class="pub-meta">Published in: Fortsch. Phys. 71 (2023) 4-5, 2300027 · e-Print: <a href="https://arxiv.org/abs/2212.11290" target="_blank" rel="noopener">2212.11290</a> [hep-ph]</p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title"><a href="https://inspirehep.net/literature/2180443" target="_blank" rel="noopener">A lesson from R<sub>ττ</sub><sup>K(*)</sup> and R<sub>νν</sub><sup>K(*)</sup> at Belle II</a></p>
+								<p class="pub-authors"><b>A. de Giorgi</b>, G. Piazza</p>
+								<p class="pub-meta">Published in: Fortsch. Phys. (2024) · e-Print: <a href="https://arxiv.org/abs/2211.05595" target="_blank" rel="noopener">2211.05595</a> [hep-ph]</p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title"><a href="https://inspirehep.net/literature/2178075" target="_blank" rel="noopener">The Low-Scale Seesaw Solution to the M<sub>W</sub> and (g&minus;2)<sub>μ</sub> Anomalies</a></p>
+								<p class="pub-authors"><b>A. de Giorgi</b>, L. Merlo, S. Pokorski</p>
+								<p class="pub-meta">Published in: Fortsch. Phys. 71 (2023) 4-5, 2300020 · e-Print: <a href="https://arxiv.org/abs/2211.03797" target="_blank" rel="noopener">2211.03797</a> [hep-ph]</p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title"><a href="https://inspirehep.net/literature/2155791" target="_blank" rel="noopener">The cost of an ALP solution to the neutral B-anomalies</a></p>
+								<p class="pub-authors">J. Bonilla, <b>A. de Giorgi</b>, B. Gavela, L. Merlo, M. Ramos</p>
+								<p class="pub-meta">Published in: JHEP 02 (2023) 138 · e-Print: <a href="https://arxiv.org/abs/2209.11247" target="_blank" rel="noopener">2209.11247</a> [hep-ph]</p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title"><a href="https://inspirehep.net/literature/2132751" target="_blank" rel="noopener">Warm dark matter from a gravitational freeze-in in extra dimensions</a></p>
+								<p class="pub-authors"><b>A. de Giorgi</b>, S. Vogl</p>
+								<p class="pub-meta">Published in: JHEP 04 (2023) 032 · e-Print: <a href="https://arxiv.org/abs/2208.03153" target="_blank" rel="noopener">2208.03153</a> [hep-ph]</p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title"><a href="https://inspirehep.net/literature/1922757" target="_blank" rel="noopener">Searching for BSM physics in Yukawa couplings and flavour symmetries</a></p>
+								<p class="pub-authors">J. Alonso-Gonzalez, <b>A. de Giorgi</b>, L. Merlo, S. Pokorski</p>
+								<p class="pub-meta">Published in: JHEP 05 (2022) 041 · e-Print: <a href="https://arxiv.org/abs/2109.07490" target="_blank" rel="noopener">2109.07490</a> [hep-ph]</p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title"><a href="https://inspirehep.net/literature/1863345" target="_blank" rel="noopener">Dark matter interacting via a massive spin-2 mediator in warped extra-dimensions</a></p>
+								<p class="pub-authors"><b>A. de Giorgi</b>, S. Vogl</p>
+								<p class="pub-meta">Published in: JHEP 11 (2021) 036 · e-Print: <a href="https://arxiv.org/abs/2105.06794" target="_blank" rel="noopener">2105.06794</a> [hep-ph]</p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title"><a href="https://inspirehep.net/literature/1837140" target="_blank" rel="noopener">Unitarity in KK-graviton production: A case study in warped extra-dimensions</a></p>
+								<p class="pub-authors"><b>A. de Giorgi</b>, S. Vogl</p>
+								<p class="pub-meta">Published in: JHEP 04 (2021) 143 · e-Print: <a href="https://arxiv.org/abs/2012.09672" target="_blank" rel="noopener">2012.09672</a> [hep-ph]</p>
+							</li>
+						</ol>
+					</div>
+				</section>
+
+				<section class="section">
+					<h2 class="section-title">White Papers &amp; Community Inputs</h2>
+					<div class="card">
+						<ol class="pub-list" reversed>
+							<li class="pub-item">
+								<p class="pub-title">The COSMIC WISPers White Paper: The physics case for Weakly Interacting Slim Particles</p>
+								<p class="pub-authors">A. Arza et al. (incl. <b>A. de Giorgi</b>)</p>
+								<p class="pub-meta">e-Print: <a href="https://arxiv.org/abs/2603.03433" target="_blank" rel="noopener">2603.03433</a></p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title">WISPedia — the WISPs Encyclopedia</p>
+								<p class="pub-authors">C. Albertus et al. (incl. <b>A. de Giorgi</b>)</p>
+								<p class="pub-meta">e-Print: <a href="https://arxiv.org/abs/2602.09089" target="_blank" rel="noopener">2602.09089</a></p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title">Exploring the Dark Universe: A European Strategy for Axions and other WISPs Discovery</p>
+								<p class="pub-authors">D. Aybas et al. (incl. <b>A. de Giorgi</b>)</p>
+								<p class="pub-meta">e-Print: <a href="https://arxiv.org/abs/2503.20432" target="_blank" rel="noopener">2503.20432</a></p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title">Early Career Researcher Input to the European Strategy for Particle Physics Update: White Paper</p>
+								<p class="pub-authors">J.-H. Arling et al. (incl. <b>A. de Giorgi</b>)</p>
+								<p class="pub-meta">e-Print: <a href="https://arxiv.org/abs/2503.19862" target="_blank" rel="noopener">2503.19862</a></p>
+							</li>
+						</ol>
+					</div>
+				</section>
+
+				<section class="section">
+					<h2 class="section-title">Proceedings</h2>
+					<div class="card">
+						<ol class="pub-list" reversed>
+							<li class="pub-item">
+								<p class="pub-title">GeV ALP from TeV Vector-like leptons</p>
+								<p class="pub-authors"><b>A. de Giorgi</b>, M. Fuentes Zamoro, L. Merlo</p>
+								<p class="pub-meta">2nd Training School and General Meeting of COST Action COSMIC WISPers (CA21106), 2024 · e-Print: <a href="https://arxiv.org/abs/2411.18246" target="_blank" rel="noopener">2411.18246</a></p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title">The Low-Scale Seesaw Solution to the M<sub>W</sub> and (g&minus;2)<sub>μ</sub> Anomalies</p>
+								<p class="pub-authors"><b>A. de Giorgi</b>, L. Merlo, S. Pokorski</p>
+								<p class="pub-meta">Moscow Univ. Phys. Bull. 79 (2024), Suppl. 1, 465–469</p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title">Low Seesaw Scale Solution for M<sub>W</sub> and (g&minus;2)<sub>μ</sub></p>
+								<p class="pub-authors"><b>A. de Giorgi</b>, L. Merlo, S. Pokorski</p>
+								<p class="pub-meta">57th Rencontres de Moriond on Electroweak Interactions and Unified Theories, 2023 · e-Print: <a href="https://arxiv.org/abs/2304.08438" target="_blank" rel="noopener">2304.08438</a></p>
+							</li>
+						</ol>
+					</div>
+				</section>
+
+				<section class="section">
+					<h2 class="section-title">Outreach</h2>
+					<div class="card">
+						<ol class="pub-list" reversed>
+							<li class="pub-item">
+								<p class="pub-title">Podcast on Particle Physics</p>
+								<p class="pub-meta">Hosted by Dr. Shounak Bhattacharya · 06/2025 · 970+ views</p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title">Public Lecture — "Why neutrinos matter"</p>
+								<p class="pub-meta">International Masterclass in Particle Physics 2025, Durham University · 110+ students from six local high schools · 03/2025</p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title">Podcast on Particle Physics</p>
+								<p class="pub-meta">Hosted by Dr. Shounak Bhattacharya · 01/2025 · 520+ views</p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title">Speaker, Jornadas de la Física</p>
+								<p class="pub-meta">Parque de Atracciones de Madrid · ~1,200 students · 03/2024</p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title">Speaker, Jornadas de la Física</p>
+								<p class="pub-meta">Parque de Atracciones de Madrid · ~1,200 students · 03/2023</p>
+							</li>
+							<li class="pub-item">
+								<p class="pub-title"><a href="https://hiddeneu.eu/outreach/entry/physics-following-breadcrumbs-our-intuition" target="_blank" rel="noopener">Physics, following the Breadcrumbs of our Intuition</a></p>
+								<p class="pub-meta"><b>A. de Giorgi</b> · February 2022</p>
+							</li>
+						</ol>
+					</div>
+					<p class="map-note" style="margin-top:14px;">The podcast and lecture links weren't recoverable from the source CV text — send them over and I'll wire them up.</p>
+				</section>
+			</div>
 		</div>
-		<div class="row" style="margin-top: -30px;">
-			<div class="col-lg-3 col-md-3 col-sm-12" id="about-info-white">
-				<figure id="profile-image">
-						<img  src="./Images/deGiorgi_web.jpeg" style="height: 70%; width:70%;   border-radius: 50%;" alt="Arturo de Giorgi">
-				</figure>
-                <br>
-                <hr class="hr_style">
-                    <h5>Ph.D.</h5>
-                    <img  src="./Images/ift_logo.png"  alt="IFT Logo" style="margin-left:3%; height: 8em; width:16em;">
-                <hr class="hr_style">
-				<ul id="about-external">
-					<li><i class="fas fa-envelope" aria-hidden="true" style=";margin-right:.2em;"></i> <a class="info-link" href="mailto:arturo.degiorgi@uam.es">Email</a></li>
-					<li><i class="fab fa-linkedin-in" aria-hidden="true" style="margin-right:.32em;"></i> <a class="info-link" href="https://www.linkedin.com/in/arturo-de-giorgi-8a6711121/">Linkedin</a></li>
-					<li><i class="fas fa-seedling" aria-hidden="true" style=";margin-right:.2em;"></i> <a class="info-link" href="https://inspirehep.net/authors/1838021">INSPIRE</a></li>
-					<li><!--<div itemscope itemtype="https://schema.org/Person">--><a itemprop="sameAs"class="info-link" content="https://orcid.org/0000-0002-9260-5466" href="https://orcid.org/0000-0002-9260-5466" target="orcid.widget" rel="me noopener noreferrer" style="vertical-align:top;"><img src="https://orcid.org/sites/default/files/images/orcid_16x16.png" style="width:1em;margin-right:.4em;" alt="ORCID iD icon">ORCID</a><!--</div>--></li>
-                    <li><img  src="./Images/Artupia_logo.png" style="height: 1em; width:1em; margin-right: .2em;" alt="Artupia Logo" > <a href="https://artupia.com" class="info-link" target="_blank">Artupia</a></li>
-                    <li><i class="fab fa fa-github" aria-hidden="true" style=";margin-right:.2em;"></i> <a href="https://github.com/DegCo" class="info-link" target="_blank">Github</a></li>
-                </ul>
-                <hr class="hr_style">
-    		</div>
-    		<div class="col-lg-9 col-md-9 col-sm-12">
-    			<div class="square-section">
-					<h3 class="feature-title">Scientific Publications</h3>
-					<ol reversed>
-						<li>
-							  <p><b>
-							    <a href="https://inspirehep.net/literature/2653352">
-							      Flavour and Higgs physics in Z2-symmetric 2HD models near the decoupling limit
-							    </a>
-							  </b></p>
-							  
-							    <p><a href="https://inspirehep.net/authors/1838021">Arturo de Giorgi</a> (<a href="https://inspirehep.net/institutions/902976">Madrid, Autonoma U.</a> and <a href="https://inspirehep.net/institutions/910767">Madrid, IFT</a>), <a href="https://inspirehep.net/authors/1635410">Fotis Koutroulis</a> (<a href="https://inspirehep.net/institutions/903335">Warsaw U.</a>), <a href="https://inspirehep.net/authors/1058044">Luca Merlo</a> (<a href="https://inspirehep.net/institutions/902976">Madrid, Autonoma U.</a> and <a href="https://inspirehep.net/institutions/910767">Madrid, IFT</a>), <a href="https://inspirehep.net/authors/993090">Stefan Pokorski</a> (<a href="https://inspirehep.net/institutions/903335">Warsaw U.</a>)</p>
-							  
-							  <p>
-							      e-Print:
-							          <a href="https://arxiv.org/abs/2304.10560">
-							      2304.10560
-							    </a>[hep-ph], DOI:
-							        <a href="https://doi.org/10.1016/j.nuclphysb.2023.116323">
-							      10.1016/j.nuclphysb.2023.116323
-							    </a>(publication)
-							      </p>
-							  <p>
-							    Published in:<span>
-							      Nucl.Phys.B 994 (2023),
-							      116323</span></p>
-						</li>
-						<br>
-						<li>
-							  <p><b>
-							    <a href="https://inspirehep.net/literature/2617409">
-							      Probing HNL-ALP couplings at colliders
-							    </a>
-							  </b></p>
-							  
-							    <p><a href="https://inspirehep.net/authors/1838021">Arturo de Giorgi</a> (<a href="https://inspirehep.net/institutions/910767">Madrid, IFT</a>), <a href="https://inspirehep.net/authors/1058044">Luca Merlo</a> (<a href="https://inspirehep.net/institutions/910767">Madrid, IFT</a>), <a href="https://inspirehep.net/authors/1706739">Jean-Loup Tastet</a> (<a href="https://inspirehep.net/institutions/910767">Madrid, IFT</a>)</p>
-							  
-							  <p>
-							      e-Print:
-							          <a href="https://arxiv.org/abs/2212.11290">
-							      2212.11290
-							    </a>[hep-ph],DOI:
-							        <a href="https://doi.org/10.1002/prop.202300027">
-							      10.1002/prop.202300027
-							    </a>(publication)
-							      </p>
-							  <p>
-							    Published in:<span>
-							      Fortsch.Phys. 71 (2023) 4-5,
-							      2300027</span></p>
-						</li>
-						<br>
-						<li>
-							  <p><b>
-							    <a href="https://inspirehep.net/literature/2180443">
-							      A lesson from $R_{\tau\tau}^{K^{(\ast)}}$ and $R_{\nu\nu}^{K^{(\ast)}}$ at Belle II
-							    </a>
-							  </b></p>
-							  
-							    <p><a href="https://inspirehep.net/authors/1838021">Arturo de Giorgi</a> (<a href="https://inspirehep.net/institutions/910767">Madrid, IFT</a>), <a href="https://inspirehep.net/authors/1821885">Gioacchino Piazza</a> (<a href="https://inspirehep.net/institutions/1776405">IJCLab, Orsay</a>)</p>
-							  
-							  <p>
-							      e-Print:
-							          <a href="https://arxiv.org/abs/2211.05595">
-							      2211.05595
-							    </a>[hep-ph]</p>
-						</li>
-						<br>
-						<li>
-							  <p><b>
-							    <a href="https://inspirehep.net/literature/2180383">
-							      Neutral $B$-anomalies from an $\mathit{on\text{-}shell}$ scalar exchange
-							    </a>
-							  </b></p>
-							  
-							    <p><a href="https://inspirehep.net/authors/1903988">Jesus Bonilla</a> (<a href="https://inspirehep.net/institutions/910767">Madrid, IFT</a>), <a href="https://inspirehep.net/authors/1838021">Arturo de Giorgi</a> (<a href="https://inspirehep.net/institutions/910767">Madrid, IFT</a>), <a href="https://inspirehep.net/authors/1640883">Maria Ramos</a> (<a href="https://inspirehep.net/institutions/910767">Madrid, IFT</a>)</p>
-							  
-							  <p>
-							      e-Print:
-							          <a href="https://arxiv.org/abs/2211.05135">
-							      2211.05135
-							    </a>[hep-ph]</p>
-						</li>
-						<br>
-						<li>
-							  <p><b>
-							    <a href="https://inspirehep.net/literature/2178075">
-							      The Low-Scale Seesaw Solution to the $M_W$ and $(g-2)_\mu$ Anomalies
-							    </a>
-							  </b></p>
-							  
-							    <p><a href="https://inspirehep.net/authors/1838021">Arturo de Giorgi</a> (<a href="https://inspirehep.net/institutions/910767">Madrid, IFT</a>), <a href="https://inspirehep.net/authors/1058044">Luca Merlo</a> (<a href="https://inspirehep.net/institutions/910767">Madrid, IFT</a>), <a href="https://inspirehep.net/authors/993090">Stefan Pokorski</a> (<a href="https://inspirehep.net/institutions/903335">Warsaw U.</a>)</p>
-							  
-							  <p>
-							      e-Print:
-							          <a href="https://arxiv.org/abs/2211.03797">
-							      2211.03797
-							    </a>[hep-ph], DOI:
-							        <a href="https://doi.org/10.1002/prop.202300020">
-							      10.1002/prop.202300020
-							    </a>
-							      </p>
-							  <p>
-							    Published in:<span>
-							      Fortsch.Phys. 71 (2023) 4-5,
-							      2300020</span></p>
-						</li>
-						<br>
-						<li>
-							  <p><b>
-							    <a href="https://inspirehep.net/literature/2155791">
-							      The cost of an ALP solution to the neutral B-anomalies
-							    </a>
-							  </b></p>
-							  
-							    <p><a href="https://inspirehep.net/authors/1903988">J. Bonilla</a> (<a href="https://inspirehep.net/institutions/910767">Madrid, IFT</a>), <a href="https://inspirehep.net/authors/1838021">A. de Giorgi</a> (<a href="https://inspirehep.net/institutions/910767">Madrid, IFT</a>), <a href="https://inspirehep.net/authors/1008753">B. Gavela</a> (<a href="https://inspirehep.net/institutions/910767">Madrid, IFT</a>), <a href="https://inspirehep.net/authors/1058044">L. Merlo</a> (<a href="https://inspirehep.net/institutions/910767">Madrid, IFT</a>), <a href="https://inspirehep.net/authors/1640883">M. Ramos</a> (<a href="https://inspirehep.net/institutions/910767">Madrid, IFT</a>)</p>
-							  
-							  <p>
-							      e-Print:
-							          <a href="https://arxiv.org/abs/2209.11247">
-							      2209.11247
-							    </a>[hep-ph], DOI:
-							        <a href="https://doi.org/10.1007/JHEP02(2023)138">
-							      10.1007/JHEP02(2023)138
-							    </a>
-							      </p>
-							  <p>
-							    Published in:<span>
-							      JHEP 02 (2023),
-							      138</span></p>
-						</li>
-						<br>
-						<li>
-						  <p><b>
-						    <a href="https://inspirehep.net/literature/2132751"  class="generic-link"> Warm dark matter from a gravitational freeze-in in extra dimensions</a>
-						  </b></p>
-						  
-						    <p><a href="https://inspirehep.net/authors/1838021"  class="generic-link">Arturo de Giorgi</a> (<a href="https://inspirehep.net/institutions/910767"  class="generic-link">Madrid, IFT</a> and <a href="https://inspirehep.net/institutions/902976"  class="generic-link">Madrid, Autonoma U.</a>), <a href="https://inspirehep.net/authors/1077735"  class="generic-link">Stefan Vogl</a> (<a href="https://inspirehep.net/institutions/902808"  class="generic-link">Freiburg U.</a>)</p>
-						  
-						 	<p> e-Print:<a href="https://arxiv.org/abs/2208.03153"  class="generic-link"> 2208.03153 </a>[hep-ph], DOI:<a href="https://doi.org/10.1007/JHEP04(2023)032"  class="generic-link">10.1007/JHEP04(2023)032</a></p>
-							<p> Published in:<span> JHEP 04 (2023),032</span></p>
-						</li>
-						<br>
-						<li>
-							<p><b>
-							    <a href="https://inspirehep.net/literature/1922757" class="generic-link">
-      								Searching for BSM physics in Yukawa couplings and flavour symmetries
-    							</a>
-  							</b></p>
-  
-    						<p>	<a href="https://inspirehep.net/authors/1831310" class="generic-link">J. Alonso-Gonzalez</a> (<a href="https://inspirehep.net/institutions/910767" class="generic-link">Madrid, IFT</a>), <a href="https://inspirehep.net/authors/1838021" class="generic-link">A. de Giorgi</a> (<a href="https://inspirehep.net/institutions/910767" class="generic-link">Madrid, IFT</a>), <a href="https://inspirehep.net/authors/1058044" class="generic-link">L. Merlo</a> (<a href="https://inspirehep.net/institutions/910767" class="generic-link">Madrid, IFT</a>), <a href="https://inspirehep.net/authors/993090" class="generic-link">S. Pokorski</a> (<a href="https://inspirehep.net/institutions/903335" class="generic-link">Warsaw U.</a>)
-    						</p>
-  
- 							 <p>
-      							e-Print:
-          						<a href="https://arxiv.org/abs/2109.07490" class="generic-link">
-     							2109.07490
-    							</a>[hep-ph],
-						        DOI:
-						        <a href="https://doi.org/10.1007/JHEP05(2022)041" class="generic-link">
-						      		10.1007/JHEP05(2022)041
-						    	</a>
-      						</p>
-							 <p>
-							    Published in:<span>
-							      JHEP 05 (2022),
-							      041</span>
-							 </p>
-						</li>
-						<br>
-						<li>
-							<p><b>
-							    <a href="https://inspirehep.net/literature/1863345" class="generic-link">
-							      Dark matter interacting via a massive spin-2 mediator in warped extra-dimensions
-							    </a>
-							  	</b>
-							</p>
-							<p><a href="https://inspirehep.net/authors/1838021" class="generic-link">Arturo de Giorgi</a> (<a href="https://inspirehep.net/institutions/903036" class="generic-link">Munich, Max Planck Inst.</a>), <a href="https://inspirehep.net/authors/1077735" class="generic-link">Stefan Vogl</a> (<a href="https://inspirehep.net/institutions/903036" class="generic-link" >Munich, Max Planck Inst.</a> and <a href="https://inspirehep.net/institutions/902808" class="generic-link">Freiburg U.</a>)</p>
-							<p> 
-								e-Print: <a href="https://arxiv.org/abs/2105.06794" class="generic-link"> 2105.06794 </a>[hep-ph], DOI: <a href="https://doi.org/10.1007/JHEP11(2021)036"  class="generic-link"> 10.1007/JHEP11(2021)036</a>
-							</p>
-							<p>
-							    Published in:<span>
-							      JHEP 11 (2021), 036 </span>
-							 </p>
-						</li>
-						<br>
-						<li>
-						  	<p>
-						  		<b><a href="https://inspirehep.net/literature/1837140" class="generic-link"> Unitarity in KK-graviton production: A case study in warped extra-dimensions</a></b>
-							</p>
-
-							<p><a href="https://inspirehep.net/authors/1838021" class="generic-link">A. de Giorgi</a> (<a href="https://inspirehep.net/institutions/903036" class="generic-link">Munich, Max Planck Inst.</a>), <a href="https://inspirehep.net/authors/1077735" class="generic-link">S. Vogl</a> (<a href="https://inspirehep.net/institutions/903036" class="generic-link">Munich, Max Planck Inst.</a> and <a href="https://inspirehep.net/institutions/902808" class="generic-link">Freiburg U.</a>)(Dec 17, 2020)</p>
-								<p>
-		      					e-Print:
-		          				<a href="https://arxiv.org/abs/2012.09672" class="generic-link"> 2012.09672</a>
-		          				[hep-ph], DOI: <a href="https://doi.org/10.1007/JHEP04(2021)143"  class="generic-link"> 10.1007/JHEP04(2021)143</a>
-							</p>
-							 <p>
-							    Published in:<span>
-							      JHEP 04 (2021),
-							      143</span>
-							 </p>
-						</li>
-					</ol>
-				</div>
-				<br>
-    			<div class="square-section">
-					<h3 class="feature-title">Outreach</h3>
-					<ol>
-						<li>
-						  	<p>
-						  		<b><a href="https://hiddeneu.eu/outreach/entry/physics-following-breadcrumbs-our-intuition" class="generic-link"> Physics, following the Breadcrumbs of our Intuition</a></b>
-							</p>
-
-							<p><a href="https://inspirehep.net/authors/1838021" class="generic-link">A. de Giorgi</a> (<a href="https://inspirehep.net/institutions/910767" class="generic-link">Madrid, IFT</a>), (Feb 08, 2022)</p>
-							<p><b>Abstract:</b> Despite the fact that the study of Nature started from what we can perceive with our senses, over the centuries it has proved increasingly "counterintuitive", revealing phenomena inconceivable to the very same senses, challenging and ultimately surpassing our imagination. How is it possible that scientific research can go on despite this? How can physicists appreciate and study the unimaginable? Above all, how can we trust what we cannot see? These questions are the lighthouse of our journey through some of the most curious phenomena that Nature can offer us.</p>
-							 <p>
-							    Published at:<span>
-							      <a href="https://hiddeneu.eu/outreach/entry/physics-following-breadcrumbs-our-intuition" class="generic-link">hidden.eu/outreach</a></span>
-							 </p>
-						</li>
-					</ol>
-				</div>
-	    	</div>
-    	</div>
 	</main>
 
-<!DOCTYPE html>
-<html>
-<body>
- 
-</body>
-</html>
-		
-	<footer class="page-footer">
-	  	<div class="container">
-	    	<div class="row">
-	    		<div class="col-lg-8 col-md-8 col-sm-12">
-	    			<h6 class="text-uppercase font-weight-bold">Additional Information</h6>
-	    			<p>This website was created as online and more general digital CV. <br> Please report any bugs at this <a style="color: #ccc;" href="mailto:arturo.degiorgi@uam.es" alt="Email"><b>address</b></a>.</p>
-	    		</div>
-	    		<div class="col-lg-4 col-md-4 col-sm-12">
-	    			<h6 class="text-uppercase font-weight-bold">Contact</h6>
-	    			<p>
-	    			<br/>arturo.degiorgi@uam.es
-	    			</p>
-	    		</div>
-	 		</div>
-    	  	<div class="footer-copyright text-center">
-                © 2022 Copyright: Deg&Co
-                <br>
-                Last Update: 12.02.2022
-            </div>
-        </div>
+	<footer class="site-footer">
+		<div class="container">
+			<div class="footer-grid">
+				<div>
+					<h6>Additional Information</h6>
+					<p>This website serves as an online, more general digital CV.<br>Please report any bugs to this <a href="mailto:arturo.de-giorgi@durham.ac.uk">address</a>.</p>
+				</div>
+				<div>
+					<h6>Contact</h6>
+					<p>arturo.de-giorgi@durham.ac.uk</p>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				© 2026 Arturo de Giorgi · Last update: July 2026
+			</div>
+		</div>
 	</footer>
 
-
-<!-- Add Jquey & Co -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="./script.js"></script>
 </body>
 </html>
