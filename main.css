@@ -251,6 +251,7 @@ main {
   grid-template-columns: 220px 1fr;
   gap: 40px;
   align-items: start;
+  margin-top: 32px;
   margin-bottom: 56px;
 }
 
@@ -710,6 +711,10 @@ main {
 }
 .prose p:last-child {
   margin-bottom: 0;
+}
+.about-prose {
+  text-align: justify;
+  hyphens: auto;
 }
 
 /* ---------------- Footer ---------------- */
