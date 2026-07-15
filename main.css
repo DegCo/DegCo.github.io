@@ -852,3 +852,24 @@ details.more p {
     grid-template-columns: 1fr;
   }
 }
+
+/* Co-authorship graph: hover a node to bring it forward (grow + bold label +
+   brighten its line to Arturo). No dimming of other nodes, no blur/shadow —
+   kept crisp. */
+#collab-graph .node-line {
+  transition: stroke-opacity 0.2s ease;
+}
+#collab-graph .node-wrap:hover .node-line {
+  stroke-opacity: 1;
+}
+#collab-graph .node-visual {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.18s ease;
+}
+#collab-graph .node-wrap:hover .node-visual {
+  transform: scale(1.2);
+}
+#collab-graph .node-wrap:hover .node-label {
+  font-weight: 700;
+}

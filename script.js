@@ -34,11 +34,13 @@ document.addEventListener("DOMContentLoaded", function () {
   renderCollabGraph();
 });
 
-// Co-authorship network (Home page only). Counts are hand-verified against
-// the Publications list: 21 papers, 25 distinct co-authors, 43 total
-// co-author credits — both cross-checked to make sure they match. Only the
-// top MAX_SHOWN are drawn (sorted largest → smallest, clockwise from the
-// top) to keep labels legible; the rest are folded into a "+N more" node.
+// Co-authorship network (Home page only): one ring around Arturo, sized by
+// paper count. Colour isn't tied to topic (that read as unclear) — instead
+// it rotates smoothly around the ring itself, a jewel-toned hue sweep keyed
+// to each node's angular position, so the colour literally follows the
+// circle. Per-person counts and the 25/43 totals are hand-verified against
+// the Publications list. Only the top MAX_SHOWN are drawn to keep labels
+// legible; the rest fold into "+N more".
 function renderCollabGraph() {
   var container = document.getElementById("collab-graph");
   if (!container) return;
@@ -76,17 +78,9 @@ function renderCollabGraph() {
   var shown = sorted.slice(0, MAX_SHOWN);
   var hidden = sorted.slice(MAX_SHOWN);
 
-  // Plain descending order around the ring — biggest at the top, shrinking
-  // clockwise — reads more predictably than interleaving, and with fewer
-  // nodes on the ring there's enough angular gap between labels either way.
   var ordered = shown.slice();
   if (hidden.length) {
-    var hiddenTotal = hidden.reduce(function (s, d) { return s + d.count; }, 0);
-    ordered.push({
-      name: "+" + hidden.length + " more (" + hiddenTotal + " credits)",
-      count: 0,
-      isMore: true
-    });
+    ordered.push({ name: "+" + hidden.length + " more", count: 0, isMore: true });
   }
 
   var width = 1440,
@@ -101,14 +95,6 @@ function renderCollabGraph() {
     maxCount = 8,
     centerR = 48;
 
-  function colorFor(c) {
-    if (c >= 7) return "#6e1423";
-    if (c >= 4) return "#8a2a3a";
-    if (c === 3) return "#9c3c4c";
-    if (c === 2) return "#b0525e";
-    return "#c98d94";
-  }
-
   function escapeXml(s) {
     return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
   }
@@ -116,94 +102,104 @@ function renderCollabGraph() {
   var positions = ordered.map(function (d, i) {
     var angle = (i / ordered.length) * 2 * Math.PI - Math.PI / 2;
     var r = d.isMore ? 5 : minNodeR + (maxNodeR - minNodeR) * Math.sqrt(d.count / maxCount);
+    // Hue sweeps a full turn across the ring, in step with each node's own
+    // angle — jewel-toned (moderate saturation, mid lightness) so it stays
+    // elegant rather than neon.
+    var hue = (i / ordered.length) * 360;
     return {
       name: d.name,
       count: d.count,
       isMore: !!d.isMore,
+      color: d.isMore ? "var(--text-muted)" : "hsl(" + hue.toFixed(1) + ", 58%, 40%)",
       x: cx + ringR * Math.cos(angle),
       y: cy + ringR * Math.sin(angle),
       r: r,
       angle: angle,
-      // alternate every other label a bit further out, so radially close
-      // labels on the same side don't sit at exactly the same offset
       stagger: i % 2 === 0 ? 0 : 30
     };
   });
 
-  var svg =
-    '<svg viewBox="0 0 ' +
-    width +
-    " " +
-    height +
-    '" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;font-family:Inter,sans-serif;">';
-
-  positions.forEach(function (p) {
-    if (p.isMore) {
-      svg +=
-        '<line x1="' + cx + '" y1="' + cy + '" x2="' + p.x.toFixed(1) + '" y2="' + p.y.toFixed(1) +
-        '" stroke="var(--text-muted)" stroke-width="1" stroke-dasharray="2 4" stroke-opacity="0.5"/>';
-      return;
-    }
-    var strokeW = minStroke + (maxStroke - minStroke) * (p.count / maxCount);
-    svg +=
-      '<line x1="' + cx + '" y1="' + cy + '" x2="' + p.x.toFixed(1) + '" y2="' + p.y.toFixed(1) +
-      '" stroke="' + colorFor(p.count) + '" stroke-width="' + strokeW.toFixed(2) + '" stroke-opacity="0.5"/>';
-  });
-
-  svg += '<circle cx="' + cx + '" cy="' + cy + '" r="' + centerR + '" style="fill:var(--accent);"/>';
-  svg +=
-    '<text x="' + cx + '" y="' + (cy + 5) + '" text-anchor="middle" font-size="21" font-weight="700" fill="#fff">Arturo</text>';
+  var parts = [];
+  parts.push(
+    '<svg viewBox="0 0 ' + width + " " + height +
+      '" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;font-family:Inter,sans-serif;">'
+  );
 
   positions.forEach(function (p, i) {
-    if (p.isMore) {
-      // Small ellipsis "dots" instead of a solid node, to read as "there's more here" rather than another collaborator.
-      [-6, 0, 6].forEach(function (dx) {
-        svg += '<circle cx="' + (p.x + dx).toFixed(1) + '" cy="' + p.y.toFixed(1) + '" r="2.2" fill="var(--text-muted)"/>';
-      });
-    } else {
-      svg += '<circle cx="' + p.x.toFixed(1) + '" cy="' + p.y.toFixed(1) + '" r="' + p.r.toFixed(1) +
-        '" fill="' + colorFor(p.count) + '" style="stroke:var(--surface);stroke-width:1.5;"/>';
-      // Count goes inside the node itself now, not appended to the label —
-      // keeps the label text short so it doesn't collide with its neighbours.
-      var countFontSize = Math.max(13, Math.min(19, p.r * 0.8));
-      svg +=
-        '<text x="' + p.x.toFixed(1) + '" y="' + (p.y + countFontSize * 0.35).toFixed(1) +
-        '" text-anchor="middle" font-size="' + countFontSize.toFixed(1) +
-        '" font-weight="700" fill="#fbe9ea">' + p.count + "</text>";
-    }
+    // Nodes near the very top or very bottom of the ring have almost no
+    // horizontal component to their angle, so the usual side-anchored label
+    // ends up hanging almost straight down (or up) from the node instead of
+    // reading cleanly beside it. Give those a centred label above/below
+    // instead.
+    var nearVertical = !p.isMore && Math.abs(Math.cos(p.angle)) < 0.35;
+    var goesUp = Math.sin(p.angle) < 0;
+    parts.push('<g class="node-wrap">');
 
-    // The very first node sits exactly at the top of the ring (angle = -90°).
-    // A side label there sits almost directly above its right-hand neighbour,
-    // so instead give it a centred label straight above the node.
-    var isTopNode = i === 0 && !p.isMore;
+    if (p.isMore) {
+      parts.push(
+        '<line class="node-line" x1="' + cx + '" y1="' + cy + '" x2="' + p.x.toFixed(1) + '" y2="' + p.y.toFixed(1) +
+          '" stroke="var(--text-muted)" stroke-width="1" stroke-dasharray="2 4" stroke-opacity="0.5"/>'
+      );
+      parts.push('<g class="node-visual">');
+      [-6, 0, 6].forEach(function (dx) {
+        parts.push('<circle cx="' + (p.x + dx).toFixed(1) + '" cy="' + p.y.toFixed(1) + '" r="2.2" fill="var(--text-muted)"/>');
+      });
+      parts.push("</g>");
+    } else {
+      var strokeW = minStroke + (maxStroke - minStroke) * (p.count / maxCount);
+      parts.push(
+        '<line class="node-line" x1="' + cx + '" y1="' + cy + '" x2="' + p.x.toFixed(1) + '" y2="' + p.y.toFixed(1) +
+          '" stroke="' + p.color + '" stroke-width="' + strokeW.toFixed(2) + '" stroke-opacity="0.55"/>'
+      );
+      parts.push("<title>" + escapeXml(p.name) + " — " + p.count + " co-authored paper" + (p.count === 1 ? "" : "s") + "</title>");
+      parts.push('<g class="node-visual">');
+      parts.push(
+        '<circle cx="' + p.x.toFixed(1) + '" cy="' + p.y.toFixed(1) + '" r="' + p.r.toFixed(1) +
+          '" fill="' + p.color + '" stroke="var(--surface)" stroke-width="1.5"/>'
+      );
+      var countFontSize = Math.max(13, Math.min(19, p.r * 0.8));
+      parts.push(
+        '<text x="' + p.x.toFixed(1) + '" y="' + (p.y + countFontSize * 0.35).toFixed(1) +
+          '" text-anchor="middle" font-size="' + countFontSize.toFixed(1) + '" font-weight="700" fill="#ffffff">' + p.count + "</text>"
+      );
+      parts.push("</g>");
+    }
 
     if (p.isMore) {
       var isRight = Math.cos(p.angle) >= 0;
       var gap = 18 + p.stagger;
       var labelX = p.x + (isRight ? p.r + gap : -(p.r + gap));
       var anchor = isRight ? "start" : "end";
-      svg +=
-        '<text x="' + labelX.toFixed(1) + '" y="' + (p.y + 4).toFixed(1) + '" text-anchor="' + anchor +
-        '" font-size="19" font-style="italic" style="fill:var(--text-muted);">' + escapeXml(p.name) + "</text>";
-    } else if (isTopNode) {
-      svg +=
-        '<text x="' + p.x.toFixed(1) + '" y="' + (p.y - p.r - 16).toFixed(1) + '" text-anchor="middle" font-size="21" font-weight="500" style="fill:var(--text);">' + escapeXml(p.name) + "</text>";
+      parts.push(
+        '<text class="node-label" x="' + labelX.toFixed(1) + '" y="' + (p.y + 4).toFixed(1) + '" text-anchor="' + anchor +
+          '" font-size="19" font-style="italic" style="fill:var(--text-muted);">' + escapeXml(p.name) + "</text>"
+      );
+    } else if (nearVertical) {
+      var vy = goesUp ? p.y - p.r - 16 : p.y + p.r + 30;
+      parts.push(
+        '<text class="node-label" x="' + p.x.toFixed(1) + '" y="' + vy.toFixed(1) +
+          '" text-anchor="middle" font-size="21" font-weight="500" style="fill:var(--text);">' + escapeXml(p.name) + "</text>"
+      );
     } else {
-      // Project the label further out along the same line from the centre
-      // through the node (rather than a flat horizontal offset), so labels
-      // near the top fan out up-and-sideways instead of stacking level with
-      // their neighbour.
       var isRight2 = Math.cos(p.angle) >= 0;
       var dist2 = p.r + 12 + p.stagger;
       var labelX2 = p.x + dist2 * Math.cos(p.angle);
       var labelY2 = p.y + dist2 * Math.sin(p.angle) + 5;
       var anchor2 = isRight2 ? "start" : "end";
-      svg +=
-        '<text x="' + labelX2.toFixed(1) + '" y="' + labelY2.toFixed(1) + '" text-anchor="' + anchor2 +
-        '" font-size="21" font-weight="500" style="fill:var(--text);">' + escapeXml(p.name) + "</text>";
+      parts.push(
+        '<text class="node-label" x="' + labelX2.toFixed(1) + '" y="' + labelY2.toFixed(1) + '" text-anchor="' + anchor2 +
+          '" font-size="21" font-weight="500" style="fill:var(--text);">' + escapeXml(p.name) + "</text>"
+      );
     }
+
+    parts.push("</g>");
   });
 
-  svg += "</svg>";
-  container.innerHTML = svg;
+  parts.push('<circle cx="' + cx + '" cy="' + cy + '" r="' + centerR + '" style="fill:var(--accent);"/>');
+  parts.push(
+    '<text x="' + cx + '" y="' + (cy + 5) + '" text-anchor="middle" font-size="21" font-weight="700" fill="#fff">Arturo</text>'
+  );
+
+  parts.push("</svg>");
+  container.innerHTML = parts.join("");
 }
