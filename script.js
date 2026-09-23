@@ -32,7 +32,31 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   renderCollabGraph();
+  initTopicFilter();
 });
+
+// Publications topic filter (Publications page only): click a pill to show
+// only Scientific Publications tagged with that topic. "All" is the default.
+function initTopicFilter() {
+  var group = document.querySelector(".topic-filter");
+  var list = document.getElementById("sci-pub-list");
+  if (!group || !list) return;
+  var items = list.querySelectorAll(".pub-item");
+
+  group.addEventListener("click", function (e) {
+    var btn = e.target.closest(".topic-pill");
+    if (!btn) return;
+    group.querySelectorAll(".topic-pill").forEach(function (b) {
+      b.classList.remove("active");
+    });
+    btn.classList.add("active");
+    var topic = btn.getAttribute("data-topic-filter");
+    items.forEach(function (li) {
+      var topics = (li.getAttribute("data-topic") || "").split(" ");
+      li.style.display = topic === "all" || topics.indexOf(topic) !== -1 ? "" : "none";
+    });
+  });
+}
 
 // Co-authorship network (Home page only): two concentric rings around
 // Arturo. The inner ring holds collaborators with 2+ papers together; the
@@ -61,7 +85,7 @@ function renderCollabGraph() {
     { name: "V. Takhistov", count: 1 },
     { name: "I. M. Soler", count: 1 },
     { name: "S. Sevillano Muñoz", count: 1 },
-    { name: "D. Pasari", count: 1 },
+    { name: "D. Pasari", count: 2 },
     { name: "M. B. Marcos", count: 1 },
     { name: "M. F. Zamoro", count: 1 },
     { name: "S. Rigolin", count: 1 },

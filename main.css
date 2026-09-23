@@ -603,6 +603,33 @@ main {
   border-bottom: none;
 }
 
+.topic-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 16px;
+}
+.topic-pill {
+  font: inherit;
+  font-size: 0.82rem;
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+.topic-pill:hover {
+  border-color: var(--accent-2);
+  color: var(--text);
+}
+.topic-pill.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
 @media (max-width: 900px) {
   .cv-layout {
     grid-template-columns: 1fr;
