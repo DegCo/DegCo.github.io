@@ -83,6 +83,7 @@ function renderCollabGraph() {
     { name: "D. Naredo-Tuero", count: 1 },
     { name: "B. Gavela", count: 1 },
     { name: "V. Takhistov", count: 1 },
+    { name: "S. Monath", count: 1 },
     { name: "I. M. Soler", count: 1 },
     { name: "S. Sevillano Muñoz", count: 1 },
     { name: "D. Pasari", count: 2 },
