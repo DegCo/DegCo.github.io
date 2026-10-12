@@ -71,7 +71,7 @@ function renderCollabGraph() {
 
   var data = [
     { name: "L. Merlo", count: 8 },
-    { name: "S. Vogl", count: 4 },
+    { name: "S. Vogl", count: 5 },
     { name: "S. Pokorski", count: 3 },
     { name: "J. Jaeckel", count: 4 },
     { name: "M. Ramos", count: 2 },
